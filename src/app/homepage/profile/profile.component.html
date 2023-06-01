@@ -1,0 +1,181 @@
+<section>
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="col-2 col-lg-3 profile_page">
+        <div class="d-flex flex-column mt-3">
+          <div class="d-flex align-items-center justify-content-center flex-column" >
+            <img src="../../../assets/images/Ellipse 15.svg" alt="" class="size">
+            <h4 class="mt-4 f16" >{{profileobject}} {{userobject}}</h4>
+            <h6 class="f16">{{country}}</h6>
+          </div>
+
+
+
+
+          <div class="navbar-nav p-2 ">
+
+
+
+            <li class="nav-item me-3 ">
+              <a class="d-flex nav-link poppins f-10 active_link" [routerLinkActive]="['active_link']"
+                [routerLinkActiveOptions]="{ exact: true }">
+                <i class="fa-solid fa-wallet mt-2 mx-2"></i>
+                <h4 class="ms-2 disa">Wallet</h4>
+              </a>
+            </li>
+
+            <li class="nav-item me-3">
+              <a class="d-flex nav-link poppins text-dark f-10" [routerLink]="['orders']"
+                >
+                <i class="fa-solid fa-recycle mt-2 mx-2"></i>
+                <h4 class="ms-2 disa">My Orders</h4>
+              </a>
+            </li>
+
+            <li class="nav-item me-3">
+              <a class="nav-link poppins text-dark f-10 d-flex" routerLinkActive="active_link"
+                [routerLinkActiveOptions]="{ exact: true }">
+                <i class="fa-sharp fa-solid fa-headset mt-2 mx-2"></i>
+                <h4 class="ms-2 disa">Support</h4>
+              </a>
+            </li>
+
+            <li class="nav-item me-3 poppins">
+              <a class="d-flex nav-link Inter text-dark f-10" [routerLink]="['Cpassword']"
+                routerLinkActive="active_link" [routerLinkActiveOptions]="{ exact: true }"><i
+                  class="fa-solid fa-lock mt-2 mx-2"></i>
+                <h4 class="ms-2 disa">Change Password</h4>
+              </a>
+            </li>
+
+
+            <div class="mt-6">
+
+              <li class="nav-item ">
+                <a class="d-flex nav-link tex-dark f-10"  routerLinkActive="active_link"
+                  [routerLinkActiveOptions]="{ exact: true }"><i class="fa-solid fa-right-from-bracket mt-2 mx-2"></i>
+                  <h4 class="ms-2 disa">Signout</h4>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="d-flex nav-link tex-dark f-10 pointer" routerLinkActive="active_link"
+                (click)="deleteaccount()"
+                  [routerLinkActiveOptions]="{ exact: true }"><i class="fa-solid fa-right-from-bracket mt-2 mx-2"></i>
+                  <h4 class="ms-2 disa">Delete my account</h4>
+                </a>
+              </li>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-2 col-10 col-lg-9">
+        <div class="container">
+
+          <div class="row">
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="card card-size p-4">
+                <div class="card-body text-light">
+                  <h4 class="card-title">Balance</h4>
+                  <h2 class="card-text">N72,540.99</h2>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+
+              <div class="row">
+                <div class="mt-4 col-6 text-center">
+
+                  <button type="submit" class="poppins fw-semibold  btn btn-primary px-6">
+                    Withdraw
+                  </button>
+                </div>
+                <div class="mt-4 col-6 text-center">
+
+                  <button type="submit" class="poppins fw-semibold  btn btn-secondary px-6 ">
+                    Deposit
+                  </button>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-12">
+                <h3 class="poppins fw-normal" style="color: #737373B0;">Transaction History</h3>
+                <i class="fa-solid fa-arrow-up-to-line" style="color: #61de70;"></i>
+              </div>
+
+
+
+              
+              <div class="mt-2 col-12">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                  
+                  <div class=" bg-light border shadow border-light  rounded-1 mb-4 w-75">
+                    <div class="d-flex mx-2">
+                      <div class="d-flex flex-column">
+                        <h5 class="f12 ms-3" style="color: #61de70; margin-top: -1rem;">_</h5>
+                        <i class="f12 fa-sharp fa-solid fa-arrow-up mx-2" style="color: #61de70;"></i>
+                      </div>
+                      <div class="d-flex flex-column">
+  
+                        <h3 class="poppins fw-bold mt-2 mx-2 f-8 ">Transaction (ID: 02576718)</h3>
+                        <p class="mx-2 poppins text-muted f-8">Thursday 16th March 2023</p>
+                      </div>
+                    </div>
+                    <h4 class="mx-3 text-end poppins fw-bold">N35,000.00</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-2 col-12">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+
+                  <div class=" bg-light border shadow border-light  rounded-1 mb-4 w-75">
+                    <div class="d-flex mx-2">
+                      <div class="d-flex flex-column">
+                        <h5 class="f12 ms-3" style="color: #61de70; margin-top: -1rem;">_</h5>
+                        <i class="f12 fa-sharp fa-solid fa-arrow-up mx-2" style="color: #61de70;"></i>
+                      </div>
+                      <div class="d-flex flex-column">
+  
+                        <h3 class="poppins fw-bold mt-2 mx-2 f-8 ">Transaction (ID: 02576718)</h3>
+                        <p class="mx-2 poppins text-muted f-8">Thursday 16th March 2023</p>
+                      </div>
+                    </div>
+                    <h4 class="mx-3 text-end poppins fw-bold">N35,000.00</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-2 col-12">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+
+                  <div class=" bg-light border shadow border-light  rounded-1 mb-4 w-75">
+                    <div class="d-flex mx-2">
+                      <div class="d-flex flex-column">
+                        <i class="f12 fa-sharp fa-solid fa-arrow-down mx-2 mt-2" style="color: #ff4700;"></i>
+                        <h5 class="f12 ms-3" style="color: #ff4700; margin-top: -2rem;">_</h5>
+                      </div>
+                      <div class="d-flex flex-column">
+  
+                        <h3 class="poppins fw-bold mt-2 mx-2 f-8 ">Transaction (ID: 02576718)</h3>
+                        <p class="mx-2 poppins text-muted f-8">Thursday 16th March 2023</p>
+                      </div>
+                    </div>
+                    <h4 class="mx-3 text-end poppins fw-bold">N500,000.00</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>

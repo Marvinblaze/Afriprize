@@ -1,0 +1,19 @@
+.circle{
+    width: 5rem;
+    height: 5rem;
+    background: rgba(78, 221, 66, 0.2);
+
+}
+
+
+#defaultCheck1 {
+    /* Increase the size */
+    transform: scale(2.5); /* Adjust the scaling factor as needed */
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Change the color */
+  #defaultCheck1 {
+    color: red; /* Set the desired color */
+  }

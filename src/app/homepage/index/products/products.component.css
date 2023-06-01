@@ -1,0 +1,53 @@
+.smallbox{
+    display: inline-block;
+    inline-size: fit-content;
+    padding: 5px;
+    background-color: white; 
+    
+}
+
+.pointer{
+    cursor: pointer;
+}
+.star{
+    margin-top: 2rem;
+}
+
+.mt-6{
+    margin-top: 7rem;
+}
+
+.brown{
+    background: #CC9933;
+
+}
+
+.px-6{
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .mt-6{
+        margin-top: 6rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .star{
+        margin-top: 3.1rem;
+    }
+
+    .px-6{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+      
+
+    .mt-6{
+        margin-top: 3.7rem;
+    }
+}

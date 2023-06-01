@@ -1,0 +1,189 @@
+.carousel-item img {
+    margin: 0 auto;
+  }
+
+  .carousel-indicators button {
+    background-color: #D9D9D980;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #fff;
+  }
+
+
+  .Images{
+    width: 75%;
+  }
+  
+
+  .bottom{
+    padding-bottom: 8rem;
+}
+.content{
+    margin-top: 4rem;
+    margin-right: 48rem;
+}
+.card-img-overlay{
+    text-align: center !important;
+  }
+  
+.f-16{
+    color: white;
+    font-size: 16px;
+    margin-right: 46rem;
+}
+.f-22{
+    color: white;
+    margin-right: 46rem;
+    font-size: 22px;
+}
+
+.f-10{
+    font-size: 19px;
+}
+
+.margin{
+    margin-left: 11rem;
+    width: 70%;
+    
+}
+
+
+
+.win{
+    margin-left: 49rem;
+}
+
+
+
+
+
+
+
+
+  
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    
+
+    .bottom{
+        padding-bottom: 3.5rem;
+    
+    }
+    .f-16{
+        color: white;
+        font-size: 9px;
+        margin-right: 10rem;
+    }
+
+    .f-22{
+        color: white;
+        font-size: 13px;
+        margin-top: -1rem;
+        margin-right: 10rem;
+       
+    }
+
+    .f-10{
+        font-size: 10px;
+    }
+
+
+    .Images{
+        width: 100%;
+      }
+ 
+
+    .margin{
+        margin-left: 1rem;
+        width: 100%;
+    }
+
+    .content{
+        margin-top: -0.2rem;
+        margin-right: 12rem;
+    }
+
+    .img {
+        width: 30px;
+        object-fit: cover;
+      }
+
+      
+      .win{
+          margin-top: -2.2rem;
+          margin-left: 14rem;
+        }
+        
+        
+        .mx-5{
+            margin-left: 0rem !important;
+            margin-right: 0rem !important;
+        }
+        
+    }
+    
+    
+    @media (min-width: 768px) and (max-width: 799px) {
+
+    
+   
+    .img {
+        width: 60px;
+        object-fit: cover;
+      }
+
+
+    
+    .bottom{
+        padding-bottom: 3rem;
+    }
+
+    .margin{
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .content{
+        margin-top: 7rem;
+        margin-right: 33rem;
+    }
+    
+
+    .win{
+        margin-top: -1rem;
+        margin-left: 23rem;
+    }
+
+    .f-10{
+        font-size: 19px;
+    }
+    
+  
+  }
+
+
+  @media (min-width: 800px) and (max-width: 1439px) {
+
+    .win{
+        margin-top: -1rem;
+        margin-left: 23rem;
+    }
+
+
+    .bottom{
+        padding-bottom: 1rem;
+    }
+    .content{
+        margin-top: 4rem;
+        margin-right: 22rem;
+    }
+
+  }
+
+  

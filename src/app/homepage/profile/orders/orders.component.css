@@ -1,0 +1,174 @@
+.pointer{
+  cursor: pointer;
+}
+.circle{
+  width: 3rem;
+  height: 3rem;
+  background: rgba(78, 221, 66, 0.2);
+
+}
+
+.profile_page{
+    height: 110vh;
+    overflow: hidden;
+    background:linear-gradient(0deg, rgba(217, 217, 217, 0.5), rgba(217, 217, 217, 0.5));
+
+  }
+
+  .f16{
+    font-size: 22px;
+    color: #636363;
+
+  }
+
+  
+  a.active_link {
+    color: #CC9933 !important;
+    ;
+  }
+
+
+    .mt-6{
+        margin-top: 8rem;
+    }
+
+    .card-size{
+        width: 20rem;
+        background: #010038;
+
+    }
+
+    .btn-primary{
+      background: #FFB000 !important;
+    }
+    .btn-info{
+      background: #636363  !important;
+    }
+
+    .btn-secondary{
+      background: #747474 !important;
+
+    }
+    
+    .px-6{
+      font-size: 20px;
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+
+    .f12{
+      font-size: 35px ;
+    }
+
+    .img-size{
+      width: 155px;
+  }
+
+  .ms-6{
+    height:35px;
+    margin-top: -0.9rem;
+    margin-right: 1rem;
+  }
+  
+
+
+  @media (min-width: 768px) and (max-width: 1439px) {
+
+    .f16{
+      font-size: 14px;
+    }
+
+  }
+
+
+
+@media (min-width: 320px) and (max-width: 767.97px) {
+
+  /* .ms-6{
+    height:30px;
+    margin-top: -0.9rem;
+    margin-left:2rem;
+  } */
+   
+
+    .size{
+        width: 40px;
+    }
+
+    .f16{
+        color: #636363;
+        font-size: 8px !important;
+
+    }
+
+    .disa{
+      display: none;
+    }
+
+    .mx-2,.ms-2{
+      margin-left: 0rem !important;
+
+    }
+
+    .px-6{
+      font-size: 15px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .w-75{
+      width: 100% !important;
+    }
+
+    .f-8{
+      font-size: 12px;
+
+    }
+
+    .img-size{
+      width: 90px;
+      height: auto;
+  }
+
+  .scroll{
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.w-50{
+  width: 100% !important;
+}
+
+.textsize{
+  font-size: 10px;
+}
+
+
+  }
+  
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .img-size{
+      width: 120px;
+  }
+
+  .textsize{
+    font-size: 16px;
+}
+
+
+    .px-6{
+      font-size: 15px;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    .disa{
+      font-size: 12px;
+    }
+  
+  }
+  
+
+

@@ -1,0 +1,175 @@
+<section class="home_bg">
+    <nav class="navbar navbar-dark navbar-expand-lg">
+      <div class="container-fluid p-1">
+        <a class="navbar-brand mx-3">
+          <img [src]="logo1" alt="" class="size">
+        </a>
+  
+        <button
+          type="button"
+          class="navbar-toggler button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+            <!-- <form class="search-box">
+                <input type="text" placeholder=""/>
+                <button type="search"></button>
+            </form> -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+              <div class="input-group">
+                <input type="text" class="form-control bg-secondary text-white" placeholder="">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+
+       
+          </ul>
+          <div class="navbar-nav ms-auto p-2 ">
+            
+            <div class="row">
+              <div class="col-12 col-md-9 col-lg-10">
+
+                <div class="d-flex align-items-center">
+
+                  <li class="nav-item me-3">
+      
+                  
+                    <a
+                      class="nav-link poppins text-light f-10"
+                      [routerLink]="['/homepage']"
+                      routerLinkActive="active_link"
+                      [routerLinkActiveOptions]="{ exact: true }"
+                      >Home</a
+                    >
+                  </li>
+        
+                  <li class="nav-item me-3">
+                    <a
+                      class="nav-link poppins text-light f-10"
+                      [routerLink]="['Draws']"
+                      routerLinkActive="active_link"
+                      [routerLinkActiveOptions]="{ exact: true }"
+                      >Draws</a
+                    >
+                  </li>
+        
+                  <li class="nav-item me-3">
+                    <a
+                      class="nav-link poppins text-light f-10"
+                      [routerLink]="['Help']"
+                      routerLinkActive="active_link"
+                      [routerLinkActiveOptions]="{ exact: true }"
+                      >Help</a
+                    >
+                  </li>
+        
+                  <li class="nav-item me-3">
+                    <a
+                      class="nav-link poppins text-light f-10"
+                      [routerLink]="['profile']"
+                      routerLinkActive="active_link"
+                      [routerLinkActiveOptions]="{ exact: true }"
+                      >Profile</a
+                    >
+                  </li>
+        
+                  <li class="nav-item me-3 poppins">
+                    <a
+                      class="nav-link Inter text-light f-10"
+                      [routerLink]="['notifications']"
+                      routerLinkActive="active_link"
+                      [routerLinkActiveOptions]="{ exact: true }"
+                      ><i class="fa-solid fa-bell"></i></a
+                    >
+                  </li>
+                  <li class="nav-item me-3">
+                    <a class="nav-link text-light f-10" [routerLink]="['carts']" routerLinkActive="active_link"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                      ><i class="fa-solid fa-cart-shopping"></i></a
+                    >
+                  </li>
+        
+                </div>
+              </div>
+            </div>
+            
+            
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  
+  
+  <div class="wrapper">
+  <router-outlet></router-outlet>
+  <section class="bg-darkblue">
+    <div class="container">
+      <div class="row">
+        <div class="row mt-5">
+          <div class="col-12 col-md-3 col-lg-3 mt-5 text-start">
+            <img [src]="logo1" alt="" class="size">
+            <p class="mt-2 poppins fw-light">
+              Copyright © 2023 Afriprize <br />
+              Smart investments for Smart People
+            </p>
+            <p class="Gilroy">All rights reserved</p>
+          </div>
+          <div class="col-12 col-md-3 col-lg-3 mt-5 fw-Regular text-start">
+            <h6 class="Gilroy text-light fw-bold mb-3">Company</h6>
+            <p>support@Afriprize.com</p>
+            <p>Contact us</p>
+          </div>
+          <div class="col-12 col-md-3 col-lg-3 fw-Regular mt-5">
+            <h6 class="Gilroy text-light fw-bold mb-3">Support</h6>
+            <p class="Gilroy">F.A.Q</p>
+            <p class="Gilroy">Terms of service</p>
+            <p class="Gilroy">Privacy policy</p>
+          </div>
+          <div class="col-12 col-md-3 col-lg-3 mt-5">
+            <h6 class="mb-3 fw-bold">Social Platforms</h6>
+            <div class="row mb-3">
+              <div class="col-12 mb-3">
+                <span class="whitesmoke rounded-circle border-dark p-1">
+                  <i class="fa-brands fa-instagram p-1"></i>
+                </span>
+                <span class="whitesmoke rounded-circle border-dark p-1 ms-3">
+                  <i class="fa-brands fa-dribbble p-1"></i>
+                </span>
+                <span class="whitesmoke rounded-circle border-dark p-1 ms-3">
+                  <i class="fa-brands fa-twitter p-1"></i>
+                </span>
+                <span class="whitesmoke rounded-circle border-dark p-1 ms-3 ">
+                  <i class="fa-brands fa-youtube p-1"></i>
+                </span>
+              </div>
+            </div>
+  
+            <button
+              class="btn btn-primary Gilroy text-light fw-bold rounded-0 mb-5"
+              type="submit"
+            >
+              Join Our Slack Community
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+</div>

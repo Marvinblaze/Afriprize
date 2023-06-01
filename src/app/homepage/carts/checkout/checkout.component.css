@@ -1,0 +1,166 @@
+
+
+  .activelink {
+      color: #CC9933 !important;
+      text-align: center;
+      cursor:pointer;
+  }
+
+
+  .gold{
+    background:#CC9933 !important;
+
+}
+
+  .mt6{
+    margin-top: 40%;
+  }
+
+  .size{
+    width: 55%;
+    height: auto;
+  }
+
+  .fs4{
+    font-size: 24px;
+  }
+
+  .btn-primary{
+    background: #010038 !important;
+
+  }
+  
+  .px-6{
+    font-size: 20px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+
+
+  .img-size{
+    width: 155px;
+}
+
+
+  .m6{
+        margin-top: 1rem;
+    }
+
+    .m5{
+        margin-top: 4rem;
+    }
+
+
+.t2{
+    margin-top: -1rem;
+}
+.p1{
+    margin-top: -1rem;
+    padding: 0.02rem 0.5rem;
+    width: 32px;
+    height: 29px;
+}
+
+
+.btn-primary{
+    background: #010038 !important;
+
+  }
+  
+  .px-6{
+    font-size: 20px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1023.99px) {
+
+    .img-size{
+        width: 120px;
+    }
+
+    .textsize{
+        font-size: 16px;
+    }
+
+    .m6{
+        margin-top: 1rem;
+    }
+
+    .m5{
+        margin-top: 3rem;
+    }
+
+    .t2{
+        margin-top: -1rem;
+    }
+    .p1{
+        margin-top: -1rem;
+        padding: 0.02rem 0.5rem;
+        width: 32px;
+        height: 29px;
+    }
+
+    .px-6{
+        font-size: 15px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+    
+}
+
+  @media (min-width: 120px) and (max-width: 767.98px) {
+ 
+    .img-size{
+        width: 90px;
+        height: auto;
+    }
+
+    .textsize{
+        font-size: 11px;
+    }
+
+    .scroll{
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+
+    .m6{
+        margin-top: 0.5rem;
+    }
+    .m7{
+        width: fit-content;
+        padding-right: 2rem;
+    }
+
+    .m5{
+        margin-top: 2rem;
+    }
+
+    .t2{
+        margin-top: -1.5rem;
+    }
+    .p1{
+        margin-top: -1.5rem;
+        padding: 0.1rem 0.5rem;
+        width: 32px;
+        height: 30px;
+    }
+
+    .mx-5{
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+    }
+
+    .px-6{
+        font-size: 12px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+    
+    
+}

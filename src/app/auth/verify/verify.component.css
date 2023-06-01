@@ -1,0 +1,113 @@
+.home_bg {
+    background: url("../../../assets/images/11 1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #071050;
+  }
+
+
+  .form{
+    position: relative;
+  }
+  .icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2rem;
+    margin-top: -2rem;
+  }
+
+  .login_page{
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .activelink {
+      color: #CC9933 ;
+      text-align: center;
+      cursor:pointer;
+  }
+
+
+  .gold{
+    background:#CC9933 !important;
+
+}
+
+  .mt6{
+    margin-top: 40%;
+  }
+
+  .size{
+    width: 55%;
+    height: auto;
+  }
+
+  .fs4{
+    font-size: 24px;
+  }
+
+  .btn-primary{
+    background: #010038 !important;
+
+  }
+  
+  .px-6{
+    font-size: 20px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1023.99px) {
+    .fs4{
+        font-size: 15px;
+      }
+
+      .px-6{
+        font-size: 15px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      .icon{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 2rem;
+        margin-top: -2rem;
+      }
+    
+}
+
+  @media (min-width: 320px) and (max-width: 758px) {
+  .left_pane{
+    display: none;
+  }
+
+  .right_pane{
+    height: 100vh;
+  }
+
+  .fs4{
+    font-size: 12px;
+  }
+
+  .px-6{
+    font-size: 11px;
+    padding-left: 4rem ;
+    padding-right: 4rem ;
+  }
+
+  .icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2rem;
+    margin-top: -2rem;
+  }
+
+}

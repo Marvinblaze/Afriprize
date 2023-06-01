@@ -1,0 +1,125 @@
+
+.profile_page{
+    height: 110vh;
+    overflow: hidden;
+    background:linear-gradient(0deg, rgba(217, 217, 217, 0.5), rgba(217, 217, 217, 0.5));
+
+  }
+
+  .f16{
+    font-size: 22px;
+    color: #636363;
+
+  }
+
+  .pointer{
+    cursor: pointer;
+  }
+  
+    /* .active_link {
+      color: #CC9933 ;
+      text-align: center;
+
+      
+    } */
+
+
+    .mt-6{
+        margin-top: 8rem;
+    }
+
+    .card-size{
+        width: 20rem;
+        background: #010038;
+
+    }
+
+    .btn-primary{
+      background: #010038 !important;
+    }
+
+    .btn-secondary{
+      background: #747474 !important;
+
+    }
+    
+    .px-6{
+      font-size: 20px;
+      padding-left: 8rem;
+      padding-right: 8rem;
+    }
+
+    .f12{
+      font-size: 35px ;
+    }
+   
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .size{
+        width: 40px;
+    }
+
+    .f16{
+        color: #636363;
+        font-size: 12px;
+
+    }
+
+    .disa{
+      display: none;
+    }
+
+    .mx-2,.ms-2{
+      margin-left: 0rem !important;
+
+    }
+
+    .px-6{
+      font-size: 15px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .w-75{
+      width: 100% !important;
+    }
+
+    .f-8{
+      font-size: 12px;
+
+    }
+
+
+  }
+  
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .px-6{
+      font-size: 15px;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+
+    .f16{
+      color: #636363;
+      font-size: 16px;
+
+  }
+
+
+    .disa{
+      font-size: 12px;
+    }
+  
+  }
+
+  a.active_link {
+    color: #CC9933 !important;
+    ;
+  }
+  
+
+

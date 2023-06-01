@@ -1,0 +1,155 @@
+.home_bg {
+    background: url("../../../assets/images/11 1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #071050;
+  }
+
+
+  .form{
+    position: relative;
+  }
+  .icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2rem;
+    margin-top: -2rem;
+  }
+
+  .login_page{
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .activelink {
+      color: #CC9933 ;
+      text-align: center;
+      cursor:pointer;
+  }
+
+
+  .grey{
+    background: #D9D9D9 !important;
+
+  }
+  .gold{
+    background:#CC9933 !important;
+
+}
+
+  .mt6{
+    margin-top: 40%;
+  }
+
+  .size{
+    width: 55%;
+    height: auto;
+  }
+
+  .fs4{
+    font-size: 24px;
+  }
+
+  .btn-primary{
+    background: #010038 !important;
+
+  }
+  
+  .px-6{
+    font-size: 20px;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  /* Hide the default radio button */
+input[type="radio"] {
+    display: none;
+  }
+  
+  /* Style the custom radio button */
+  input[type="radio"] + label {
+    position: relative;
+    padding-left: 25px; /* Adjust the spacing as needed */
+    cursor: pointer;
+    
+  }
+  
+  /* Customize the appearance of the radio button */
+  input[type="radio"] + label:before {
+    content: '';
+    position: absolute;
+    margin-top: 0.5rem;
+    top: 0;
+    left: 0;
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    border: 2px solid #000; /* Set the border color */
+    border-radius: 50%;
+  }
+  
+  /* Style the checked radio button */
+  input[type="radio"]:checked + label:before {
+    background-color: #000; /* Set the desired color */
+  }
+
+  @media (min-width: 768px) and (max-width: 1023.99px) {
+    .fs4{
+        font-size: 15px;
+      }
+
+      .px-6{
+        font-size: 15px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      .icon{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 2rem;
+        margin-top: -2rem;
+      }
+
+      .fs-9{
+        font-size: 11px;
+      }
+    
+}
+
+  @media (min-width: 120px) and (max-width: 767.98px) {
+  .left_pane{
+    display: none;
+  }
+
+  .right_pane{
+    height: 100vh;
+  }
+
+  .fs4{
+    font-size: 12px;
+  }
+
+  .px-6{
+    font-size: 12px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .icon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2rem;
+    margin-top: -2rem;
+  }
+
+  .fs-9{
+    font-size: 9px;
+  }
+
+}

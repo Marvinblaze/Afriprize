@@ -1,0 +1,215 @@
+.msize{
+
+    margin-top: -3rem;
+    width:3em
+
+}
+
+
+.mt-6{
+    margin-top: 7rem;
+}
+
+.bottom{
+    padding-bottom: 13rem;
+}
+.f-16{
+    font-size: 16px;
+}
+.f-22{
+    margin-top: -1rem;
+    font-size: 22px;
+}
+
+.f-10{
+    font-size: 12px;
+}
+
+.margin{
+    margin-left: 11rem;
+    width: 70%;
+    
+}
+
+.t-center{
+    text-align: center;
+}
+
+.brown{
+    background: #CC9933;
+
+}
+
+.px-6{
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.mx-6{
+    margin-left: 22rem;
+}
+
+.bg-dange{
+    background: #CC99334A !important;
+
+}
+
+.accordion-decoration{
+    text-decoration: none;
+}
+
+
+.hver{
+    text-decoration: none;
+}
+.hver:hover{
+    /* text-decoration: underline; */
+    /* text-decoration-color: #010038; */
+    border-bottom: 4px solid #010038;
+
+}
+
+
+.smallbox{
+    display: inline-block;
+    inline-size: fit-content;
+    padding: 5px;
+    background-color: white; 
+    
+}
+
+.star{
+    margin-top: 2rem;
+}
+  
+  
+
+
+@media (min-width: 320px) and (max-width: 992px) {
+
+
+    .msize{
+        margin-top: 0rem !important;
+        width:2em
+    
+    }
+
+    .star{
+        margin-top: 3.1rem;
+    }
+      
+
+    .mt-6{
+        margin-top: 3.7rem;
+    }
+    
+
+    .bottom{
+        padding-bottom: 3.5rem;
+    
+    }
+    .f-16{
+        font-size: 9px;
+    }
+
+    .f-22{
+        font-size: 12px;
+        margin-top: -1rem;
+    }
+
+    .t-center{
+        text-align: start;
+    }
+    
+    .scroll{
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .margin{
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+    .px-6{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+
+    .mx-6{
+        margin-left: 1rem;
+    }
+
+    .win{
+        margin-top: -2.5rem;
+    }
+  }
+  
+
+  @media (min-width: 992px) and (max-width: 1440px) {
+
+    .msize{
+        margin-top: 3rem !important;
+        width:4em
+    
+    }
+
+    .img{
+        margin-left: 43rem;
+    }
+
+    .win{
+        margin-top: -1.5rem;
+    }
+
+    .f-22{
+        font-size: 14px;
+        margin-top: -1rem;
+    }
+
+    .mt-6{
+        width: 60px !important;
+        margin-top: 2rem;
+    }
+    
+    .bottom{
+        padding-bottom: 3rem;
+    }
+
+    .margin{
+        margin-left: 0rem;
+        width: 100%;
+    }
+
+
+    .mx-6{
+        margin-left: 12rem;
+    }
+
+    .px-6{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
+    .smallbox{
+        display: inline-block;
+        inline-size: fit-content;
+        padding: 5px;
+        background-color: white; 
+        
+    }
+    
+    .star{
+        margin-top: 4.3rem;
+    }
+  
+  }
+
+
+  /* .custom-accordion .accordion-header{
+    color: black;
+
+  } */
+

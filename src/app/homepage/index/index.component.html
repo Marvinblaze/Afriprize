@@ -1,0 +1,374 @@
+<section style="margin-bottom: 20rem;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="mt-5 col-12 col-md-6">
+          <div class="col-12 col-md-11">
+            <div class="card text-bg-dark">
+              <img src="../../../assets/images/Rectangle 25.svg" alt="car" />
+              <div class="card-img-overlay">
+                <div class="bottom"></div>
+                <div class="card msize">
+                  <img src="../../../assets/images/Rectangle 952.svg" alt="" />
+                  <div class="card-img-overlay"></div>
+                </div>
+                <p class="card-text f-16">
+                  Buy snickers and stand <br />
+                  a chance to win
+                </p>
+                <h6 class="card-text f-22">2023 McLaren</h6>
+                <div class="d-flex justify-content-end win">
+                  <button
+                    type="button"
+                    class="btn btn-light text-end poppins fw-semibold"
+                  >
+                    Win Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 mt-5">
+          <h3 class="poppins text-muted t-center fw-bold">Selling Fast</h3>
+
+          <div
+            class="d-flex align-items-center justify-content-between d-md-block scroll mb-3 margin"
+          >
+            <div class="col-12 mb-5 mx-2" >
+              <div class="card" style="border: 4px solid black">
+                <div class="row mx-2">
+                  <div class="col-6 col-lg-9">
+                    <div class="card-body">
+                      <h5 class="card-title poppins-bold text-dark fw-bold">
+                        Win Ferrari
+                      </h5>
+                      <p class="card-text text-dark f-16">
+                        Stand a chance to win <br />2023 ferrari
+                      </p>
+                      <p class="card-text text-dark f-16">800 sold out of 2,000</p>
+                      <div
+                        class="progress bg-dange"
+                        role="progressbar"
+                        aria-label="Basic example"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <div
+                          class="progress-bar brown"
+                          style="width: 40%"
+                        ></div>
+                      </div>
+                      <a routerLink="" class="btn btn-dark mt-5 px-4"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 mt-3">
+                    <img
+                      src="../../../assets/images/Rectangle 12.svg"
+                      alt=""
+                      class="img-fluid "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mb-5 mx-2">
+              <div class="card" style="border: 4px solid black">
+                <div class="row mx-2">
+                  <div class="col-6 col-lg-9">
+                    <div class="card-body">
+                      <h5 class="card-title poppins-bold text-dark fw-bold">
+                        Win Ferrari
+                      </h5>
+                      <p class="card-text text-dark f-16">
+                        Stand a chance to win <br />2023 ferrari
+                      </p>
+                      <p class="card-text text-dark f-16">800 sold out of 2,000</p>
+                      <div
+                        class="progress bg-dange"
+                        role="progressbar"
+                        aria-label="Basic example"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <div
+                          class="progress-bar brown"
+                          style="width: 40%"
+                        ></div>
+                      </div>
+                      <a routerLink="" class="btn btn-dark mt-5 px-4"
+                        >Learn More</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 mt-3">
+                    <img
+                      src="../../../assets/images/Rectangle 12.svg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 mt-3">
+        <h1 class="text-start text-muted poppins fw-bold">Recommended</h1>
+        <div class="row mt-5">
+          <div
+            class="col-12 col-md-6 col-lg-3 mb-4"
+            *ngFor="let item of Products"
+            [routerLink]="['/homepage/index/products']"
+          >
+            <div class="card border border-top-0 shadow rounded-4">
+              <img
+                src="{{ item.images }}"
+                class="card-img-top mx-auto"
+                alt=""
+                style="height: 300px; width: 100%"
+              />
+              <div class="card-img-overlay">
+                <div class="star smallbox"><i class="fa-sharp fa-solid fa-star" style="color: #fdcc0d;"></i>  4.9</div>
+                
+                <div class="text-end">
+                  <img src="{{item.free}}" alt="" class="mt-6">
+                </div>
+              </div>
+              <div class="card-body mt-2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-8">
+                      <h3 class="fw-bold poppins fs-6">{{ item.names }}</h3>
+                      <p class="card-text text-dark">800 sold out of 2,000</p>
+                      <div
+                        class="progress bg-dange"
+                        role="progressbar"
+                        aria-label="Basic example"
+                        aria-valuenow="0"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        <div
+                          class="progress-bar brown"
+                          style="width: 40%"
+                        ></div>
+                      </div>
+                      <p class="mb-5">
+                        Buy Flipflop for:
+                        <span style="color: #cc9933">$7:50</span>
+                      </p>
+                    </div>
+                    <div class="col-4">
+                      <p class="f-10">Draw date:26th April</p>
+                    </div>
+                    <button
+                    type="submit"
+                    class="btn btn-dark px-5 mb-5 rounded-3"
+                    
+                  >
+                    Add to cart
+                    <i class="fa-solid fa-bag-shopping"></i>
+                  </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+
+            <a [routerLink]="['index/products']" class="hver fs-4">See All</a>
+        </div>
+      </div>
+
+            <!------FAQ-->
+        <div class="col-12 mt-5">
+        
+            <div class="row">
+              <h1 class="text-start text-muted">F.A.Q</h1>
+              
+              <div class="col-12 col-lg-9 mt-2">
+                <div class="container mx-6 custom-accordion">
+                    <accordion>
+                      <accordion-group
+                        class="mt-5 border"
+                        [panelClass]="customClass"
+                      >
+                        <button
+                          class="btn btn-link justify-content-between d-flex w-100 shadow-none accordion-decoration"
+                          accordion-heading
+                          type="button"
+                        >
+                          <div class="pull-left float-left accordion-header">
+                            <h4 class="mt-5 poppins fw-normal">
+                              What is AfrPrize and how does it work? 
+                            </h4>
+                          </div>
+                          <div class="mt-5">
+                            <i class="fa-solid fa-angle-down text-muted"></i>
+                          </div>
+                        </button>
+                        <p class="text-muted">
+                          TAfrPrize is an ecommerce platform that offers a unique lottery experience to its 
+                          customers. Every time you purchase an item, you are automatically entered into 
+                          a lottery slot for a chance to win exciting prizes. 
+                        </p>
+          
+                        <button
+                          class="btn btn-primary Inter text-light fw-bold rounded-1 mb-5"
+                          type="submit"
+                        >
+                          Learn more
+                        </button>
+                      </accordion-group>
+          
+                      <accordion-group
+                        class="border border-bottom-0 border-end-0 border-start-0"
+                        [panelClass]="customClass"
+                      >
+                        <button
+                          class="btn btn-link justify-content-between d-flex w-100 shadow-none accordion-decoration"
+                          accordion-heading
+                          type="button"
+                        >
+                          <div class="pull-left float-left">
+                            <h4 class="mt-5 Gilroy fw-normal">
+                              How do I participate in the AfrPrize lottery?
+                            </h4>
+                           
+                          </div>
+                          <div class="mt-5">
+                            <i class="fa-solid fa-angle-down text-muted"></i>
+                          </div>
+                        </button>
+                        <p class="text-muted">
+                          Participating in the AfrPrize lottery is easy! Simply make a purchase on our 
+                          website, and you will be automatically entered into the lottery for that specific 
+                          item
+                        </p>
+          
+                        <button
+                          class="btn btn-primary Inter text-light fw-bold rounded-1 mb-5"
+                          type="submit"
+                        >
+                          Learn more
+                        </button>
+                      </accordion-group>
+          
+                      
+                      <accordion-group
+                        class="border border-bottom-0 border-end-0 border-start-0"
+                        [panelClass]="customClass"
+                      >
+                        <button
+                          class="btn btn-link justify-content-between d-flex w-100 shadow-none accordion-decoration"
+                          accordion-heading
+                          type="button"
+                        >
+                          <div class="pull-left float-left">
+                            <h4 class="mt-5 Gilroy fw-normal">
+                              Are there any additional costs or fees for entering the lottery? 
+                            </h4>
+                          </div>
+                          <div class="mt-5">
+                            <i class="fa-solid fa-angle-down text-muted"></i>
+                          </div>
+                        </button>
+                        <p class="text-muted">
+                          No, there are no additional costs or fees for entering the AfrPrize lottery. Your 
+                          entry is included with your purchase, so you have a chance to win without any 
+                          extra expenses.
+                        </p>
+          
+                        <button
+                          class="btn btn-primary Inter text-light fw-bold rounded-1 mb-5"
+                          type="submit"
+                        >
+                          Learn more
+                        </button>
+                      </accordion-group>
+          
+                      <!-- <div class="mt-5 border-bottom"></div> -->
+                      <accordion-group
+                        class="border border-bottom-0 border-end-0 border-start-0"
+                        [panelClass]="customClass"
+                      >
+                        <button
+                          class="btn btn-link justify-content-between d-flex w-100 shadow-none accordion-decoration"
+                          accordion-heading
+                          type="button"
+                        >
+                          <div class="pull-left float-left">
+                            <h4 class="mt-5 Gilroy fw-normal" >
+                              How are the lottery winners chosen?
+                            </h4>
+                          </div>
+                          <div class="mt-5">
+                            <i class="fa-solid fa-angle-down text-muted"></i>
+                          </div>
+                        </button>
+                        <p class="text-muted">
+                          The lottery winners are chosen randomly using an automated system. Each entry 
+                          has an equal chance of being selected as a winner.
+                        </p>
+          
+                        <button
+                          class="btn btn-primary Inter text-light fw-bold rounded-1 mb-5"
+                          type="submit"
+                        >
+                          Learn more
+                        </button>
+                      </accordion-group>
+          
+                      <!-- <div class="mt-5 border-bottom"></div> -->
+                      <accordion-group
+                        class="mb-5 border border-bottom-0 border-end-0 border-start-0"
+                        [panelClass]="customClass"
+                      >
+                        <button
+                          class="btn btn-link justify-content-between d-flex w-100 shadow-none accordion-decoration"
+                          accordion-heading
+                          type="button"
+                        >
+                          <div class="pull-left float-left">
+                            <h4 class="mt-5 Gilroy fw-normal" >
+                              What happens if I win the lottery?
+                            </h4>
+                          </div>
+                          <div class="mt-5">
+                            <i class="fa-solid fa-angle-down text-muted"></i>
+                          </div>
+                        </button>
+                        <p class="text-muted">
+                          If you win the lottery, congratulations! We will provide instructions on how to 
+                          claim your prize. You may need to provide some additional information for 
+                          verification purposes, and we will arrange the delivery of your prize.
+                        </p>
+          
+                        <button
+                          class="btn btn-primary Inter text-light fw-bold rounded-1 mb-5"
+                          type="submit"
+                        >
+                          Learn more
+                        </button>
+                      </accordion-group>
+                    </accordion>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+    
+      
+    </div>
+  
+</section>
