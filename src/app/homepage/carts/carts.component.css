@@ -1,5 +1,6 @@
 .img-size{
-    width: 155px;
+    width: 120px;
+    height: auto;
 }
 
 
@@ -8,9 +9,29 @@
     }
 
     .m5{
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
+
+ 
+      
+      .form-check-input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #D9D9D9;
+        outline: none;
+        transition: border-color 0.2s ease-in-out;
+      }
+      
+      .form-check-input[type="checkbox"]:checked {
+        border-color: #D9D9D9;
+        background-color: #CC9933;
+      }
+      
 
 .t2{
     margin-top: -1rem;
@@ -35,8 +56,17 @@
   }
 
 
+  .border{
+    border-radius: 15px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top: none !important;
+    
+}
 
-@media (min-width: 768px) and (max-width: 1024px) {
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
     .img-size{
         width: 120px;
     }
@@ -70,23 +100,110 @@
       }
 
     
-}
+} */
 
-@media (min-width: 320px) and (max-width: 767.98px) {
-
-
+@media (min-width: 769px) and (max-width: 1024px) {
+  
     .img-size{
-        width: 90px;
-        height: auto;
+        width: 120px;
     }
 
     .textsize{
-        font-size: 11px;
+        font-size: 12px;
     }
 
-    .scroll{
-        overflow-x: scroll;
-        white-space: nowrap;
+
+    .f-16{
+        font-size: 16px !important;
+    }
+
+    .m6{
+        margin-top: 1rem;
+    }
+
+    .m5{
+        margin-top: 3rem;
+    }
+
+    .t2{
+        margin-top: -1rem;
+    }
+    .p1{
+        margin-top: -1rem;
+        padding: 0.02rem 0.5rem;
+        width: 32px;
+        height: 29px;
+    }
+
+    .px-6{
+        font-size: 15px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+}
+
+
+@media (min-width: 526px) and (max-width: 768px) {
+
+    .img-size{
+        width: 120px;
+    }
+
+    .textsize{
+        font-size: 16px;
+    }
+
+    .m6{
+        margin-top: 1rem;
+    }
+
+    .m5{
+        margin-top: 3rem;
+    }
+
+    .t2{
+        margin-top: -1rem;
+    }
+    .p1{
+        margin-top: -1rem;
+        padding: 0.02rem 0.5rem;
+        width: 32px;
+        height: 29px;
+    }
+
+    .px-6{
+        font-size: 15px;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 525px) {
+
+    .ms-4{
+        margin-left: 0.5rem !important;
+    }
+
+
+    .img-size{
+        width: 100px;
+        height: auto;
+    }
+
+    .p-2{
+        padding: 0rem 1rem !important;
+    }
+
+    .textsize{
+        font-size: 10px;
+    }
+
+    .h6{
+        font-size: 10px !important;
     }
 
 
@@ -99,19 +216,21 @@
     }
 
     .t2{
-        margin-top: -1.5rem;
+        margin-top: -2.5rem;
+        text-align: center;
     }
     .p1{
-        margin-top: -1.5rem;
-        padding: 0.1rem 0.5rem;
-        width: 32px;
+        margin-top: -2.5rem;
+        padding: 0.01rem 0.05rem;
+        width: 30px;
         height: 30px;
     }
 
-    .mx-5{
+    .mx-4,.mt-4{
         margin-left: 0rem !important;
-        margin-right: 0rem !important;
-    }
+        margin-right: 1rem !important;
+        margin-top: 0rem !important;
+    } 
 
     .px-6{
         font-size: 12px;
@@ -119,4 +238,16 @@
         padding-right: 3rem;
       }
     
+
+      .mx-5{
+
+        margin-left: 0rem !important;
+        margin-right: 0rem !important;
+
+      }
+
 }
+
+
+
+

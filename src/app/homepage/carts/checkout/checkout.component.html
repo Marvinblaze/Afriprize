@@ -23,7 +23,7 @@
       </div>
       <div class="mt-3">
         <div
-          class="progress mx-5"
+          class="progress mx-2"
           role="progressbar"
           aria-label="Basic example"
           aria-valuenow="0"
@@ -35,17 +35,17 @@
       </div>
 
       <div
-        class="d-flex align-items-center justify-content-between flex-wrap mt-5"
+        class="d-flex align-items-center justify-content-between flex-wrap mt-3"
       >
         <div class="col-12 col-md-6">
           <div class="d-flex flex-column">
-            <h2 class="text-center fw-bold poppins">
+            <h2 class="text-start fw-bold poppins">
               Order review & Billing summary
             </h2>
-            <h6 class="text-center poppins mt-3">2 items in cart</h6>
+            <h6 class="text-start poppins mt-3">2 items in cart</h6>
           </div>
         </div>
-        <div class="col-12 col-md-6 text-center">
+        <div class="col-12 col-md-6 text-end mb-3">
           <button
             type="submit"
             class="poppins fw-semibold btn btn-primary px-6"
@@ -57,9 +57,72 @@
       </div>
 
 
-      <div class="row">
+      <div class="row mt-4">
 
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-5">
+
+
+
+            <div class="mt-2 col-12">
+              <div
+                class="border rounded-1 mb-5 w-100 px-2"
+              >
+                <div class="row">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <img
+                          src="../../../assets/images/Rectangle 41.svg"
+                          alt=""
+                          class="img-size mx-3"
+                        />
+                        <div
+                          class="d-flex flex-column m6"
+                        >
+                          <h5 class="poppins fw-semibold mt-3 textsize">
+                            Cotton shirt Regular Fit<br />
+                            Cotton shirt Regular Fit
+                          </h5>
+    
+                          <h6 class="poppins fw-bold m5">
+                            $20
+                          </h6>
+                        </div>
+
+                    </div>
+                    <div class="d-flex mb-2 m6">
+                        <div
+                          class="d-flex flex-column mt-3"
+                        >
+                        <div class="form-check ms-5 mb-5">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  
+                        </div>
+
+                            <div class="d-flex m5">
+                                <button
+                              class="btn-secondary rounded-3 p1"
+                              type="button"
+                              (click)="decrement()"
+                            >
+                            -
+                            </button>
+                            <p class="poppins fw-semibold ms-4 t2">{{count}}</p>
+                            <button
+                              class="btn-secondary rounded-3 p1 ms-3"
+                              type="button"
+                              (click)="increment()"
+                            >
+                                +
+                            </button>
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
     
               <div class="mt-2 col-12">
                 <div
@@ -185,32 +248,32 @@
                 </div>
               </div>
             </div>
-            
-            <div class="col-12 col-lg-6">
-              <div class="mx-5">
+            <div class="c0l-12 col-lg-1"></div>
+            <div class="col-12 col-lg-6 text">
+              <div class="">
         
-                  <div class="d-flex align-items-center justify-content-between mt-5 mx-5">
-                      <h5 class="mx-5 poppins text-muted">Sub Total</h5>
-                      <h6 class="mx-5 poppins fw-bold">$60</h6>
-        
-                  </div>
-        
-                  <div class="d-flex align-items-center justify-content-between mt-3 mx-5">
-                      <h5 class="mx-5 poppins text-muted">Delivery Fee</h5>
-                      <h6 class="mx-5 poppins fw-bold">$10</h6>
+                  <div class="d-flex align-items-center justify-content-end mt-5">
+                      <h5 class="ms-6 poppins text-muted">Sub Total</h5>
+                      <h6 class="poppins fw-bold">$60</h6>
         
                   </div>
         
-                  <div class="mx-5 mt-3">
+                  <div class="d-flex align-items-center justify-content-end mt-3">
+                      <h5 class="ms-6 poppins text-muted">Delivery Fee</h5>
+                      <h6 class="poppins fw-bold">$10</h6>
+        
+                  </div>
+        
+                  <div class="mt-3 mx-5">
                       <div class="progress mx-5" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
                           <div class="progress-bar" style="width: 0%"></div>
                         </div>
         
                   </div>
         
-                  <div class="d-flex align-items-center justify-content-between mt-5 mx-5">
-                      <h3 class="mx-5 poppins fw-bold">Total Fee</h3>
-                      <h4 class="mx-5 poppins fw-bold">$10</h4>
+                  <div class="d-flex align-items-center justify-content-end mt-5">
+                      <h3 class="ms-6 poppins fw-bold">Total</h3>
+                      <h4 class="poppins fw-bold">$10</h4>
         
                   </div>
         

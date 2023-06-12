@@ -1,20 +1,136 @@
-.msize{
+/* car section */
 
-    margin-top: -3rem;
-    width:3em
+.car{
+    height: 455px;
+}
+
+.t5{
+    margin-top: 2rem;
+}
+.car-margin{
+    margin-top: 5rem;
+}
+
+h5{
+    font-size: 30px !important;
+}
+
+.bottom{
+    position: absolute;
+    color: white;
+    left: 2rem;
+    top: 26rem;
+}
+
+.msize{
+    width:5rem
 
 }
 
+.win{
+    margin-left: 30rem;
+}
+
+.t-center{
+    text-align: center;
+}
+
+.border{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    border-top: none !important;
+    
+}
+
+.pad{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+
+.border-image{
+    width: 100px;
+}
+
+
+.bg-dange{
+    margin-top: -1rem;
+    width: 310px !important;
+    height: 5px;
+    background: #CC99334A !important;
+    
+}
+.margin{
+    margin-left: 5rem !important;
+    width: 600px;
+    
+}
+
+
+
+/* recommended section */
+
+.border-top-0{
+    border-top: none !important;
+}
+
+
+.recommend-img{
+    height: 205px; 
+    width: 100%;
+}
+
+
+.recommend .caption{
+    position: relative;
+    top: -14rem;
+    margin-left: 1rem;
+
+}
+
+.recommend .img2{
+    position: relative;
+    top: -9rem;
+    margin-left: 16rem;
+}
+
+.distance{
+    margin-top: -8rem;
+}
+
+.smallbox{
+    display: inline-block;
+    inline-size: fit-content;
+    padding: 2px 10px;
+    border-radius: 9px;
+    background-color: white; 
+    
+}
+
+.star{
+    margin-top: 2rem;
+}
+
+.button-reccomend{
+    margin-left: 3rem !important;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+.btn-dark{
+    background: #010038 !important;
+}
+/* all margin and fonts  */
 
 .mt-6{
     margin-top: 7rem;
 }
 
-.bottom{
-    padding-bottom: 13rem;
-}
 .f-16{
-    font-size: 16px;
+    font-size: 12px;
 }
 .f-22{
     margin-top: -1rem;
@@ -25,19 +141,11 @@
     font-size: 12px;
 }
 
-.margin{
-    margin-left: 11rem;
-    width: 70%;
-    
-}
 
-.t-center{
-    text-align: center;
-}
 
 .brown{
     background: #CC9933;
-
+    
 }
 
 .px-6{
@@ -49,16 +157,22 @@
     margin-left: 22rem;
 }
 
-.bg-dange{
-    background: #CC99334A !important;
 
+.learn{
+    width: 120px;
+    height: 30px;
 }
+
+
+/* 
+accordion section */
 
 .accordion-decoration{
     text-decoration: none;
 }
 
 
+/* see all */
 .hver{
     text-decoration: none;
 }
@@ -66,11 +180,120 @@
     /* text-decoration: underline; */
     /* text-decoration-color: #010038; */
     border-bottom: 4px solid #010038;
-
+    
 }
 
 
-.smallbox{
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1441px) {
+    
+
+    /* car section */
+    .car{
+        height: 500px;
+    }
+    
+    .car-margin{
+        margin-top: 5rem;
+    }
+    
+    .t5{
+        margin-top: 3rem;
+    }
+    
+    h5{
+        font-size: 30px !important;
+    }
+    
+    .bottom{
+        position: absolute;
+        color: white;
+        left: 2rem;
+        top: 30rem;
+    }
+    
+    .msize{
+        width:5rem
+        
+    }
+    
+    .win{
+        margin-left: 30rem;
+    }
+    
+    
+    .margin{
+        margin-left: 4rem !important;
+        width: 500px;
+        
+    }
+    .bg-dange{
+        margin-top: -1rem;
+        width: 310px !important;
+        height: 10px;
+        background: #CC99334A !important;
+        
+    }
+    
+    .border{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        border-top: none !important;
+        
+    }
+    
+    .pad{
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    
+    .border-image{
+        width: 100px;
+    }
+    
+
+
+    
+    .img{
+      margin-left: 43rem;
+  }
+
+
+
+  /* .recommend section */
+  .recommend-img{
+    height: 205px; 
+    width: 100%;
+}
+
+
+.recommend .caption{
+    position: relative;
+    top: -16rem;
+    margin-left: 1rem;
+
+}
+
+.recommend .img2{
+    position: relative;
+    top: -12rem;
+    margin-left: 15.5rem;
+}
+
+.distance{
+    margin-top: -10.5rem;
+}
+
+
+
+
+/* .smallbox{
     display: inline-block;
     inline-size: fit-content;
     padding: 5px;
@@ -80,24 +303,525 @@
 
 .star{
     margin-top: 2rem;
+} */
+
+.button-reccomend{
+    margin-left: 1rem !important;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
-  
-  
 
 
-@media (min-width: 320px) and (max-width: 992px) {
+.btn-dark{
+    background: #010038 !important;
+}
+
+ 
+    
+    .f-22{
+        font-size: 14px;
+        margin-top: -1rem;
+    }
+    
+    .mt-6{
+        width: 60px !important;
+        margin-top: 2rem;
+    }
+    
+    
+   
+    
+    .mx-6{
+        margin-left: 12rem;
+    }
+    
+    .px-6{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    
+    
+    .smallbox{
+        display: inline-block;
+        inline-size: fit-content;
+        padding: 2px 10px;
+        border-radius: 9px;
+        background-color: white; 
+        
+    }
+    
+    .star{
+      margin-top: 4.3rem;
+    }
+    
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+     /* car section */
+     .car{
+        height: 390px;
+    }
+
+   
+    
+    .car-margin{
+        margin-top: 5rem;
+    }
 
 
+    
+    .t5{
+        margin-top: 1rem;
+    }
+
+    
+    h5{
+        font-size: 17px !important;
+    }
+    
+    .bottom{
+        position: absolute;
+        color: white;
+        left: 2rem;
+        top: 23rem;
+    }
+    
     .msize{
-        margin-top: 0rem !important;
-        width:2em
+        width:5rem
+        
+    }
+    
+    .win{
+        margin-left: 27rem;
+    }
+    
+    
+    .margin{
+        margin-left: 1rem !important;
+        width: 350px;
+        
+    }
+
+    
+    .border{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        border-top: none !important;
+        
+    }
+    
+    .pad{
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+
+    .bg-dange{
+        margin-top: -1rem;
+        width: 190px !important;
+        height: 8px;
+        background: #CC99334A !important;
+        
+    }
+    
+    
+    .border-image{
+        width: 80px;
+    }
+
+
+
+    /* .recommend section */
+  .recommend-img{
+    height: 150px; 
+    width: 100%;
+}
+
+
+.recommend .caption{
+    position: relative;
+    top: -10rem;
+    margin-left: 1rem;
+
+}
+
+.recommend .img2{
+    position: relative;
+    top: -8.6rem;
+    margin-left: 9.6rem;
+    width: 60px;
+}
+
+.distance{
+    margin-top: -7.6rem;
+}
+
+.smallbox{
+    display: inline-block;
+    inline-size: fit-content;
+    padding: 2px 10px;
+    border-radius: 9px;
+    background-color: white; 
+    
+}
+
+.star{
+    margin-top: 2rem;
+}
+
+.button-reccomend{
+    margin-left: 1rem !important;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+.btn-dark{
+    background: #010038 !important;
+}
+
+
+
+
+    /* Fonts and margins */
+    .f-16{
+        font-size: 10px;
+    }
+
+
+
+    /* accordion section */
+
+    .px-6{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    
+    .mx-6{
+        margin-left: 16rem;
+    }
+    
+
+}
+
+
+@media (min-width: 526px) and (max-width: 768px) {
+
+     /* car section */
+     .car{
+        height: 390px;
+    }
+
+    /* .scroll{
+        overflow-x: scroll;
+    }
+
+    */
+    
+    .car-margin{
+        margin-top: 5rem;
+    }
+
+
+    
+    .t5{
+        margin-top: 1rem;
+    }
+
+    
+    h5{
+        font-size: 17px !important;
+    }
+    
+    .bottom{
+        position: absolute;
+        color: white;
+        left: 2rem;
+        top: 23rem;
+    }
+    
+    .msize{
+        width:5rem
+        
+    }
+    
+    .win{
+        margin-left: 27rem;
+    }
+    
+    
+    .margin{
+        margin-left: 1rem !important;
+        width: 350px;
+        
+    }
+
+    
+    .border{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        border-top: none !important;
+        
+    }
+    
+    .pad{
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+
+    .bg-dange{
+        margin-top: -1rem;
+        width: 190px !important;
+        height: 7px;
+        background: #CC99334A !important;
+        
+    }
+    
+    
+    .border-image{
+        width: 80px;
+    }
+
+
+
+    /* .recommend section */
+  .recommend-img{
+    height: 215px; 
+    width: 100%;
+}
+
+
+.recommend .caption{
+    position: relative;
+    top: -12rem;
+    /* margin-left: 1rem; */
+    margin-top: -50rem;
+}
+
+.recommend .img2{
+    position: relative;
+    width: 70px;
+    top: -3.2rem;
+  
+    margin-top: -5rem;
+   
+}
+
+.distance{
+    margin-top: -3.2rem;
+}
+
+
+
+.dash .bg-dange{
+    margin-top: -1rem;
+    width: 310px !important;
+    height:9px;
+    background: #CC99334A !important;
+    
+}
+
+
+.smallbox{
+    display: inline-block;
+    inline-size: fit-content;
+    padding: 2px 10px;
+    border-radius: 9px;
+    background-color: white; 
+    
+}
+
+.star{
+    margin-top: 2rem;
+}
+
+.button-reccomend{
+    margin-left: 2rem !important;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+.btn-dark{
+    background: #010038 !important;
+}
+
+
+
+
+    /* Fonts and margins */
+    .f-16{
+        font-size: 10px;
+    }
+
+
+
+    
+    /* accordion section */
+
+    .px-6{
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+    
+    .mx-6{
+        margin-left: 1rem;
+    }
+    
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 525px) {
+
+
+    
+     /* car section */
+     .car{
+        height: 190px;
+    }
+    
+    .car-margin{
+        margin-top: 5rem;
+    }
+    
+    .t5{
+        margin-top: 1rem;
     
     }
+    
+    h5{
+        font-size: 14px !important;
+    }
+    
+    .bottom{
+        position: absolute;
+        color: white;
+        left: 2rem;
+        top: 14rem;
+    }
+    
+    .msize{
+        width:3em
+        
+    }
+    
+    .win{
+        margin-left: 8rem;
+  
+    }
+
+    .padt{
+        font-size: 10px;
+    }
+    
+    
+    .margin{
+        margin-left: 0rem !important;
+        width: 350px;
+        
+    }
+
+
+    .scroll{
+        overflow-x: scroll;
+        white-space: nowrap;
+        
+    }
+    
+    .border{
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        border-top: none !important;
+        
+    }
+    
+    .pad{
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+
+    .bg-dange{
+        margin-top: -1rem;
+        width: 190px !important;
+        height: 10px;
+        background: #CC99334A !important;
+        
+    }
+    
+    
+    .border-image{
+        width: 60px;
+    }
+
+
+
+
+    /* .recommend section */
+  .recommend-img{
+    height: 240px; 
+    /* width: 100vh; */
+}
+
+
+.recommend .caption{
+    position: relative;
+    top: -13rem;
+    /* margin-left: 1rem; */
+    margin-top: -50rem;
+}
+
+.recommend .img2{
+    position: relative;
+    width: 40px;
+    top: -4rem;
+    margin-right: 1rem;
+    margin-top: -3.5rem;
+   
+}
+
+.distance{
+    margin-top: -2rem;
+}
+
+
+.dash .bg-dange{
+    margin-top: -1rem;
+    width: 280px !important;
+    height:9px;
+    background: #CC99334A !important;
+    
+}
+
+
+.button-reccomend{
+    margin-left: 1.5rem !important;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+
+.btn-dark{
+    background: #010038 !important;
+}
 
     .star{
         margin-top: 3.1rem;
     }
       
+
+
+
 
     .mt-6{
         margin-top: 3.7rem;
@@ -118,13 +842,13 @@
     }
 
     .t-center{
-        text-align: start;
+        text-align: center;
     }
     
-    .scroll{
+    /* .scroll{
         overflow-x: scroll;
         white-space: nowrap;
-    }
+    } */
 
     .margin{
         margin-left: 0rem;
@@ -141,75 +865,9 @@
         margin-left: 1rem;
     }
 
-    .win{
-        margin-top: -2.5rem;
-    }
+
   }
   
 
-  @media (min-width: 992px) and (max-width: 1440px) {
 
-    .msize{
-        margin-top: 3rem !important;
-        width:4em
-    
-    }
-
-    .img{
-        margin-left: 43rem;
-    }
-
-    .win{
-        margin-top: -1.5rem;
-    }
-
-    .f-22{
-        font-size: 14px;
-        margin-top: -1rem;
-    }
-
-    .mt-6{
-        width: 60px !important;
-        margin-top: 2rem;
-    }
-    
-    .bottom{
-        padding-bottom: 3rem;
-    }
-
-    .margin{
-        margin-left: 0rem;
-        width: 100%;
-    }
-
-
-    .mx-6{
-        margin-left: 12rem;
-    }
-
-    .px-6{
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-
-    .smallbox{
-        display: inline-block;
-        inline-size: fit-content;
-        padding: 5px;
-        background-color: white; 
-        
-    }
-    
-    .star{
-        margin-top: 4.3rem;
-    }
-  
-  }
-
-
-  /* .custom-accordion .accordion-header{
-    color: black;
-
-  } */
 

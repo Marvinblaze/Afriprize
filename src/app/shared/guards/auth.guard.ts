@@ -15,6 +15,8 @@ import { AuthenticateService } from '../api/authentication/authenticate.service'
 })
 export class AuthGuard implements CanActivate {
 
+  isadmin = true;
+
 
   constructor(
     private _router: Router,

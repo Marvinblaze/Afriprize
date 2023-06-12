@@ -26,9 +26,7 @@
     margin-top: 4rem;
     margin-right: 48rem;
 }
-.card-img-overlay{
-    text-align: center !important;
-  }
+
   
 .f-16{
     color: white;
@@ -51,46 +49,83 @@
     
 }
 
+.brown{
+    background: #CC9933;
+    
+}
+
+.active{
+    color: #CC9933;
+}
 
 
-.win{
-    margin-left: 49rem;
+.center-text{
+    text-align: center;
 }
 
 
 
+.padt{
+    position: absolute;
+   left: 60rem;
+   top: 29rem;
+   width: 12rem;
+   
+   }
+
+   .progress{
+    height: 8px;
+   }
+   
 
 
 
+.captions{
+    position: absolute;
+    top: 15rem;
+    left: 14rem;
+}
 
+.img1{
+    width: 9rem
+}
 
   
 
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
     
 
-    .bottom{
-        padding-bottom: 3.5rem;
-    
-    }
-    .f-16{
-        color: white;
-        font-size: 9px;
-        margin-right: 10rem;
-    }
-
-    .f-22{
-        color: white;
-        font-size: 13px;
-        margin-top: -1rem;
-        margin-right: 10rem;
+    .padt{
+        position: absolute;
+       left: 14rem;
+       top: 7rem;
+       width: 6rem;
+       }
        
+      
+    
+  
+    
+    .img1{
+        width: 2rem
     }
+
+
+
+
+
+    .captions{
+        position: absolute;
+        top: 9rem;
+        left: 10rem;
+    }
+
+    
 
     .f-10{
-        font-size: 10px;
+        font-size: 9px;
     }
 
 
@@ -104,10 +139,6 @@
         width: 100%;
     }
 
-    .content{
-        margin-top: -0.2rem;
-        margin-right: 12rem;
-    }
 
     .img {
         width: 30px;
@@ -115,9 +146,13 @@
       }
 
       
-      .win{
-          margin-top: -2.2rem;
-          margin-left: 14rem;
+     
+
+
+        .captions{
+            position: absolute;
+            top: 4rem;
+            left: 3rem;
         }
         
         
@@ -129,7 +164,7 @@
     }
     
     
-    @media (min-width: 768px) and (max-width: 799px) {
+    @media (min-width: 768px) and (max-width: 999px) {
 
     
    
@@ -137,6 +172,24 @@
         width: 60px;
         object-fit: cover;
       }
+
+
+      .padt{
+        position: absolute;
+       left: 29rem;
+       top: 12rem;
+       width: 8rem;
+       }
+       
+    
+    
+    
+  
+    
+    .img1{
+        width: 4rem
+    }
+    
 
 
     
@@ -149,19 +202,18 @@
         width: 100%;
     }
 
-    .content{
-        margin-top: 7rem;
-        margin-right: 33rem;
+
+
+    .captions{
+        position: absolute;
+        top: 7rem;
+        left: 8rem;
     }
+
     
 
-    .win{
-        margin-top: -1rem;
-        margin-left: 23rem;
-    }
-
     .f-10{
-        font-size: 19px;
+        font-size: 11px;
     }
     
   
@@ -170,19 +222,40 @@
 
   @media (min-width: 800px) and (max-width: 1439px) {
 
-    .win{
-        margin-top: -1rem;
-        margin-left: 23rem;
+    .padt{
+        position: absolute;
+       left: 39rem;
+       top: 17rem;
+       width:11rem;
+       }
+       
+    
+    
+       .f-10{
+        font-size: 15px;
+    }
+    
+    
+  
+    
+    .img1{
+        width: 5rem
     }
 
 
-    .bottom{
-        padding-bottom: 1rem;
+
+
+
+    .captions{
+        position: absolute;
+        top: 9rem;
+        left: 10rem;
     }
-    .content{
-        margin-top: 4rem;
-        margin-right: 22rem;
-    }
+
+    
+
+    
+
 
   }
 

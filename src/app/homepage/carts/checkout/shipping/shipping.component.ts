@@ -42,11 +42,10 @@ export class ShippingComponent implements OnInit {
     });
   }
 
-
+  
   goto(event: any) {
-
-    this.router.navigate(['/homepage']);
-
+    this.router.navigate(['homepage/carts/checkout/shipping/payment']);
+    
     type PostBody = {
       email: string
       password: string

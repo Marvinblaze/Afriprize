@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-products-detail',
   templateUrl: './products-detail.component.html',
   styleUrls: ['./products-detail.component.css']
 })
-export class ProductsDetailComponent {
+export class ProductsDetailComponent implements OnInit {
 
 
   product: any[]= [
@@ -21,7 +22,7 @@ export class ProductsDetailComponent {
     {
       images: '../../../../../assets/images/Rectangle 956 (1).svg'
     }
-  ]
+  ];
 
 
 
@@ -48,8 +49,57 @@ export class ProductsDetailComponent {
       images: '../../../assets/images/iphone14 1.svg',
       names: 'Win IPhone 14 pro',
       free: '../../../assets/images/Rectangle 956.svg'
-    }
+    },
+    {
+      images: '../../../assets/images/Rectangle 31.svg',
+      names: 'Win Macbook pro 2020',
+      free: '../../../assets/images/Rectangle 955.svg'
+    },
+    {
+      images: '../../../assets/images/iphone14 1.svg',
+      names: 'Win IPhone 14 pro',
+      free: '../../../assets/images/Rectangle 956.svg'
+    },
+    {
+      images: '../../../assets/images/Rectangle 31.svg',
+      names: 'Win Macbook pro 2020',
+      free: '../../../assets/images/Rectangle 955.svg'
+    },
+    {
+      images: '../../../assets/images/iphone14 1.svg',
+      names: 'Win IPhone 14 pro',
+      free: '../../../assets/images/Rectangle 956.svg'
+    },
 
-  ]
+  ];
+
+
+
+  
+  count: number = 0;
+
+  constructor(
+    private router: Router,
+  ) {}
+
+  ngOnInit(): void {
+    console.log(this.count)
+    
+  }
+
+
+  increment() {
+    this.count++;
+  
+  }
+
+  decrement() {
+    if (this.count > 0) {
+      this.count--;
+    }
+  }
+
+
+
 
 }

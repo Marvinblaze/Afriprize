@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ProductsService } from 'src/app/shared/api/products/products.service';
+import { SessionService } from 'src/app/shared/storage/session.service';
 
 @Component({
   selector: 'app-products',
@@ -51,7 +53,10 @@ export class ProductsComponent implements OnInit {
       free: '../../../assets/images/Rectangle 956.svg'
     },
 
-  ]
+  ];
+
+
+  allProducts:Array<any>=[];
 
 
   
@@ -62,7 +67,7 @@ export class ProductsComponent implements OnInit {
 
 
   constructor(
-    private router: Router,
+    private router: Router, private list:ProductsService, private session: SessionService
 
   ) {}
 
@@ -76,6 +81,14 @@ export class ProductsComponent implements OnInit {
   goto(event: any) {
     this.router.navigate(['homepage/index/products/products-detail']);
     console.log()
+  }
+
+
+  listproduct(){
+    this.list.getlist().subscribe((res:any) =>{
+      this.allProducts = res.data.reverse();
+      console.log(this.allProducts)
+    })
   }
 
 }

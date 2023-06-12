@@ -15,12 +15,6 @@
 
   }
 
-  .f16{
-    font-size: 22px;
-    color: #636363;
-
-  }
-
   
   a.active_link {
     color: #CC9933 !important;
@@ -32,13 +26,9 @@
         margin-top: 8rem;
     }
 
-    .card-size{
-        width: 20rem;
-        background: #010038;
+   
 
-    }
-
-    .btn-primary{
+    .btn_primary{
       background: #FFB000 !important;
     }
     .btn-info{
@@ -47,6 +37,7 @@
 
     .btn-secondary{
       background: #747474 !important;
+
 
     }
     
@@ -65,41 +56,26 @@
   }
 
   .ms-6{
-    height:35px;
-    margin-top: -0.9rem;
-    margin-right: 1rem;
-  }
-  
-
-
-  @media (min-width: 768px) and (max-width: 1439px) {
-
-    .f16{
-      font-size: 14px;
-    }
+    margin-top: -0.4rem;
 
   }
+
+
+
+
 
 
 
 @media (min-width: 320px) and (max-width: 767.97px) {
 
-  /* .ms-6{
-    height:30px;
-    margin-top: -0.9rem;
-    margin-left:2rem;
-  } */
+
    
 
     .size{
         width: 40px;
     }
 
-    .f16{
-        color: #636363;
-        font-size: 8px !important;
-
-    }
+  
 
     .disa{
       display: none;
@@ -130,14 +106,7 @@
       height: auto;
   }
 
-  .scroll{
-    overflow-x: scroll;
-    white-space: nowrap;
-}
 
-.w-50{
-  width: 100% !important;
-}
 
 .textsize{
   font-size: 10px;
@@ -170,5 +139,448 @@
   
   }
   
+
+
+
+  
+
+
+/* Profile section */
+.profile_page{
+  height: 130vh;
+  position: relative;
+  overflow: auto;
+  background:linear-gradient(0deg, rgba(217, 217, 217, 0.5), rgba(217, 217, 217, 0.5));
+
+}
+
+.f16{
+  font-size: 12px;
+  color: #636363;
+
+}
+
+.f20{
+  font-size: 20px;
+  color: #636363;
+
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+
+/* .mt-6{
+  margin-bottom:auto ;
+} */
+
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+}
+
+
+/* margins and fonts */
+
+  .mt-6{
+      margin-top: 4.5rem;
+
+  }
+
+  .f-8{
+    font-size: 12px;
+  }
+
+
+  .margin{
+    margin-top: -0.5rem;
+  }
+  
+  
+  
+  
+  /* balance section */
+
+
+
+  
+  .card-size{
+    width: 50rem;
+    background: #010038;
+    
+  }
+  
+  .btn-primary{
+    background: #010038 !important;
+  }
+  
+  .btn-secondary{
+    background: #747474 !important;
+    
+  }
+  
+  .center-text{
+    margin-left: 5rem;
+  }
+  
+  .px-6{
+    font-size: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .f23{
+    font-size: 17px !important;
+    margin-left: 33rem;
+  }
+  
+  .border{
+    border-radius: 15px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-top: none !important;
+    
+}
+
+.f15{
+  font-size: 25px !important;
+}
+
+.w-75{
+  width: 85% !important;
+}
+
+
+  
+  .f12{
+    font-size: 35px ;
+  }
+  
+  a.active_link {
+    color: #CC9933 !important;
+    ;
+  }
+
+
+/* @media (min-width: 320px) and (max-width: 768px) {
+
+  .size{
+      width: 40px;
+  }
+
+  .f16{
+      color: #636363;
+      font-size: 12px;
+
+  }
+
+  .disa{
+    display: none;
+  }
+
+  .mx-2,.ms-2{
+    margin-left: 0rem !important;
+
+  }
+
+  .px-6{
+    font-size: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .w-75{
+    width: 100% !important;
+  }
+
+  .f-8{
+    font-size: 12px;
+
+  }
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .px-6{
+    font-size: 15px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .f16{
+    color: #636363;
+    font-size: 16px;
+
+}
+
+
+  .disa{
+    font-size: 12px;
+  }
+
+} */
+
+
+
+
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1441px) {
+
+
+
+
+/* balance section */
+
+.f23{
+  font-size: 17px !important;
+  margin-left: 30rem;
+}
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+
+.profile_page{
+  height: 130vh;
+  overflow: auto;
+
+}
+
+/* marginsand fonts */
+
+.f16{
+  font-size: 12px;
+  color: #636363;
+
+}
+
+.f20{
+  font-size: 20px;
+  color: #636363;
+
+}
+
+.f-8{
+  font-size: 11px;
+}
+
+
+/* balance section */
+
+.f23{
+
+  font-size: 15px !important;
+  margin-left: 25rem;
+
+}
+
+
+.f15{
+  font-size: 20px !important;
+}
+
+
+.w-75{
+  width: 100% !important;
+}
+
+}
+
+
+@media (min-width: 526px) and (max-width: 768px) {
+
+
+
+/* profile section */
+
+.f16{
+  font-size: 12px;
+  color: #636363;
+
+}
+
+.f20{
+  font-size: 15px;
+  color: #636363;
+
+}
+
+.ms-4{
+  margin-left: 0rem !important;
+
+}
+
+
+.profile_page{
+  height: 200vh;
+  overflow: auto;
+
+}
+
+.size{
+  width: 100px;
+}
+
+.f16{
+  color: #636363;
+  font-size: 16px;
+
+}
+
+
+.disa{
+  font-size: 12px;
+}
+
+
+
+
+/* marginsand fonts */
+
+.f-8{
+  font-size: 10px;
+}
+
+/* 
+balance section */
+
+.center-text{
+  margin-left: 4rem;
+
+}
+
+.px-6{
+  font-size: 17px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+
+.f23{
+
+  font-size: 13px !important;
+  margin-left: 18rem;
+
+}
+
+
+.f15{
+  font-size: 17px !important;
+}
+
+
+.w-75{
+  width: 100% !important;
+}
+
+
+
+}
+
+
+@media (min-width: 320px) and (max-width: 525px) {
+
+
+
+  .fs-4{
+    font-size: 12px !important;
+  }
+
+
+/* profile section */
+
+.profile_page{
+  height: 250vh;
+  overflow: auto;
+
+}
+
+
+.f16{
+  font-size: 9px;
+  color: #636363;
+
+}
+
+.f20{
+  font-size: 11px;
+  color: #636363;
+  text-align: center;
+
+}
+
+.ms-4{
+  margin-left: 0rem !important;
+  
+}
+
+.size{
+  width: 40px;
+}
+
+
+
+.disa{
+display: none;
+}
+
+
+
+/* margins and fonts */
+
+.mx-2,.ms-2{
+margin-left: 0.4rem !important;
+
+}
+
+
+
+/* balane section */
+
+.px-6{
+font-size: 15px;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
+
+.center-text{
+margin-left: 1rem;
+
+}
+
+.f23{
+
+font-size: 11px !important;
+margin-left: 1rem;
+
+}
+
+
+.f15{
+font-size: 15px !important;
+}
+
+
+.w-75{
+width: 100% !important;
+}
+
+
+.f-8{
+font-size: 9px;
+
+}
+}
 
 

@@ -11,12 +11,12 @@
               alt=""
               class="size"
             />
-            <h4 class="mt-4 f16">{{profileobject}} {{userobject}}</h4>
+            <h4 class="mt-4 f20">{{profileobject}} {{userobject}}</h4>
             <h6 class="f16">{{country}}</h6>
           </div>
 
-          <div class="navbar-nav p-2">
-            <li class="nav-item me-3">
+          <div class="navbar-nav p-2 mt-3">
+            <li class="nav-item  ms-4">
               <a
                 class="d-flex nav-link poppins f-10 pointer"
   
@@ -29,7 +29,7 @@
               </a>
             </li>
 
-            <li class="nav-item me-3">
+            <li class="nav-item ms-4">
               <a
                 class="d-flex nav-link poppins text-dark f-10 active_link"
                 [routerLink]="['orders']"
@@ -41,7 +41,7 @@
               </a>
             </li>
 
-            <li class="nav-item me-3">
+            <li class="nav-item  ms-4">
               <a
                 class="nav-link poppins text-dark f-10 d-flex"
                 [routerLink]="['Help']"
@@ -53,7 +53,7 @@
               </a>
             </li>
 
-            <li class="nav-item me-3 poppins">
+            <li class="nav-item ms-4 poppins">
               <a
                 class="d-flex nav-link Inter text-dark f-10"
                 [routerLink]="['notifications']"
@@ -64,8 +64,8 @@
               </a>
             </li>
 
-            <div class="mt-6">
-              <li class="nav-item">
+            <div class="bottom">
+              <li class="nav-item  ms-4">
                 <a
                   class="d-flex nav-link tex-dark f-10"
                   [routerLink]="['carts']"
@@ -75,7 +75,7 @@
                   <h4 class="ms-2 disa">Signout</h4>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item  ms-4">
                 <a
                   class="d-flex nav-link tex-dark f-10"
                   [routerLink]="['carts']"
@@ -90,151 +90,138 @@
         </div>
       </div>
 
-      <div class="mt-2 col-10 col-lg-9">
+      <div class="mt-6 col-10 col-lg-9">
         <div class="container">
-          <h1 class="text-secondary mt-4">Track Order</h1>
+          <h5 class="text-secondary mt-4 ms-4">Track Order</h5>
           <div class="row">
-            <div class="d-flex align-items-center justify-content-center">
-              <div
-                class="bg-light border shadow border-light rounded-1 mb-5 p-3 w-50 scroll"
-              >
-                <div class="row">
-                  <div
-                    class="d-flex align-items-center justify-content-between"
-                  >
-                    <div class="d-flex">
-                      <img
-                        src="../../../assets/images/Rectangle 41.svg"
-                        alt=""
-                        class="img-size mx-4"
-                      />
-                      <div class="d-flex flex-column m6">
-                        <h5 class="poppins fw-normal mt-3 textsize">
-                          Cotton shirt Regular Fit<br />
-                          Cotton shirt Regular Fit
-                        </h5>
+            <div
+              class="d-flex align-content-start mt-2"
+            >
+              <div class="d-flex">
+                <img
+                  src="../../../assets/images/Rectangle 41.svg"
+                  alt=""
+                  class="img-size mx-2"
+                />
+                <div class="d-flex flex-column m6">
+                  <h5 class="poppins fw-normal textsize">
+                    <span class="fw-bold fs-4">
+                      Cotton shirt Regular Fit
 
-                        <h6 class="poppins fw-bold m5">$20</h6>
-                      </div>
-                    </div>
-                  </div>
+                    </span><br />
+                    Cotton shirt Regular Fit
+                  </h5>
+
+                  <h6 class="poppins fw-bold m5">Price: <span style="color: #CC9933;">$20</span></h6>
                 </div>
               </div>
             </div>
           </div>
-
           
           <div
-            class="d-flex align-items-center justify-content-center mb-5"
+            class="d-flex mt-5"
           >
 
-          <div class="row justify-content-end">
+          <div class="row">
             
-            <div class="row align-items-center">
-              <div class="col-6 text-end">
+            <div class="d-flex">
+              <div class="d-flex">
                 <div
-                  class="text-center rounded-circle border ms-auto btn-primary circle"
+                  class="text-center rounded-circle border ms-auto btn_primary circle"
                 >
                   <i
                     class="mt-3 fa-solid fa-receipt"
                     style="color: #ffffff"
                   ></i>
                 </div>
-                <h1 class="ms-6" style="color: #ffb000">|</h1>
+                <h1 class="mx-2 ms-6" style="color: #ffb000">|</h1>
               </div>
               <div class="col-6">
                 <h5 class="poppins fw-bold text-secondary textsize">
                   Order placed
                 </h5>
-                <h6 class="textsize">We have received your order</h6>
+                <h6 class="textsize ms-6">We have received your order</h6>
               </div>
             </div>
-            <div class="row">
-              <div class="col-6 text-end">
+
+
+            <div class="d-flex mt-4">
+              <div class="d-flex">
                 <div
-                  class="text-center rounded-circle border ms-auto btn-primary circle"
+                  class="text-center rounded-circle border ms-auto btn_primary circle"
                 >
                   <i
                     class="mt-3 fa-solid fa-receipt"
                     style="color: #ffffff"
                   ></i>
                 </div>
-                <h1 class="ms-6" style="color: #ffb000">|</h1>
+                <h1 class="mx-2 ms-6" style="color: #ffb000">|</h1>
               </div>
               <div class="col-6 textsize">
                 <h5 class="poppins fw-bold text-secondary textsize">
                   Ready to ship
                 </h5>
-                <h6 class="poppins fw-normal textsize">
+                <h6 class="poppins fw-normal textsize ms-6">
                   Your order is ready for shipping
                 </h6>
               </div>
             </div>
 
-            <div class="row">
-              <div class="col-6 text-end">
+            <div class="d-flex mt-4">
+              <div class="d-flex">
                 <div
                   class="text-center rounded-circle border ms-auto btn-info circle"
                 >
                   <i class="mt-3 fa-solid fa-box" style="color: #d2d2d2"></i>
                 </div>
-                <h1 class="ms-6" style="color: #636363">|</h1>
+                <h1 class="mx-2 ms-6" style="color: #636363">|</h1>
               </div>
               <div class="col-6">
                 <h5 class="poppins fw-bold text-secondary textsize">
                   Out for delivery
                 </h5>
-                <h6 class="poppins fw-normal textsize">
+                <h6 class="poppins fw-normal textsize ms-6">
                   Your order is out for delivey
                 </h6>
               </div>
             </div>
-            <div class="row">
-              <div class="col-6 text-end">
+            <div class="d-flex mt-4">
+              <div class="d-flex">
                 <div
                   class="text-center rounded-circle border ms-auto btn-info circle"
                 >
                   <i class="mt-3 fa-solid fa-truck" style="color: #d2d2d2"></i>
                 </div>
-                <h1 class="ms-6" style="color: #636363">|</h1>
+                <h1 class="mx-2 ms-6" style="color: #636363">|</h1>
               </div>
               <div class="col-6">
                 <h5 class="poppins fw-bold text-secondary textsize">
                   Delivered
                 </h5>
-                <h6 class="poppins fw-normal textsize">
+                <h6 class="poppins fw-normal textsize ms-6">
                   Your order has been delivered
                 </h6>
               </div>
             </div>
-            <div class="row">
-              <div class="col-6 text-end">
+            <div class="d-flex mt-4">
+              <div class="d-flex">
                 <div
                   class="text-center rounded-circle border ms-auto btn-info circle"
                 >
                   <i class="mt-3 fa-solid fa-check" style="color: #d2d2d2"></i>
                 </div>
               </div>
+              <h1 class="mx-2 ms-6 linesize" style="color: #636363">|</h1>
               <div class="col-6">
                 <h5 class="poppins fw-bold text-secondary textsize">
                   Order placed
                 </h5>
-                <h6 class="poppins fw-normal textsize">
+                <h6 class="poppins fw-normal textsize ms-6">
                   We have received your order
                 </h6>
               </div>
             </div>
-            
-            
-            <div class="mt-4 col-6 text-end">
-              <button
-                type="submit"
-                class="poppins fw-semibold btn btn-light px-6"
-                style="background-color: #010038 !important; color: white"
-              >
-                Review
-              </button>
-            </div>
+          
           </div>
 
           </div>

@@ -9,14 +9,27 @@ import { Router } from '@angular/router';
 export class CartsComponent implements OnInit{
 
 
-
+  count: number = 0;
 
   constructor(
     private router: Router,
   ) {}
 
   ngOnInit(): void {
+    console.log(this.count)
     
+  }
+
+
+  increment() {
+    this.count++;
+  
+  }
+
+  decrement() {
+    if (this.count > 0) {
+      this.count--;
+    }
   }
 
   goto(event: any) {

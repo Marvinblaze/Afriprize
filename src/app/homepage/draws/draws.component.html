@@ -22,29 +22,32 @@
 
                         <img class="d-block Images" src="../../../assets/images/Rectangle 25.svg" alt="Image 1">
                         <div class="card-img-overlay">
-                            <div class="bottom"></div>
+                            <!-- <div class="bottom"></div> -->
                             <div class="d-flex flex-column align-content-center justify-content-center content">
 
                               <div class="row align-items-end">
                                 <div class="col-12 ms-2">
 
-                                  <div class="card-img-top" >
-                                    <img src="../../../assets/images/Rectangle 952.svg" alt="" class="img" />
-                                
-                                    <p class="card-text text-white f-10">
-                                      Buy snickers and stand <br/>
-                                      a chance to win
-                                    </p>
-                                    
-                                    <h6 class="card-text text-white f-10">2023 McLaren</h6>
+                                  <div class="captions">
+
+                                    <div class="card-img-top" >
+                                      <img src="../../../assets/images/Rectangle 952.svg" alt="" class="img1" />
+                                  
+                                      <p class="card-text text-white f-10">
+                                        Buy snickers and stand a chance to win
+                                      </p>
+                                      
+                                      <h6 class="card-text text-white f-10">2023 McLaren</h6>
+                                    </div>
                                   </div>
+
                                 </div>
                               </div>
                             </div>
                             <div class="win">
                               <button
                                 type="button"
-                                class="btn btn-light text-end poppins fw-semibold f-10"
+                                class="btn btn-light poppins fw-semibold f-10 px-4 padt" 
                               >
                                 Win Now
                               </button>
@@ -90,42 +93,68 @@
 
 <section class="mt-5" style="margin-bottom: 10rem;">
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="d-flex justify-content-between mx-5">
-                    <a class="text-secondary fs-4 fw-semibold text-decoration-none">Running ticket</a>
-                    <a class="text-secondary fs-4 fw-semibold text-end text-decoration-none me-5" [routerLink]="['closed-ticket']">Closed ticket</a>
+                <div class="d-flex justify-content-between align-items-center">
+                    <a class="fs-4 fw-semibold text-decoration-none mx-auto active">Running ticket</a>
+                    <a class="text-dark fs-4 fw-semibold  text-decoration-none mx-auto" [routerLink]="['closed-ticket']">Closed ticket</a>
+                </div>
+
+                <div class="progress mt-3" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                  <div class="progress-bar brown" style="width: 50%"></div>
                 </div>
                 
 
-                <div class="mx-5 table-responsive">
+                <div class="mx-5 table-responsive mt-3">
 
                     <table class="table poppins fs-4 mb-5">
                         <thead class="">
-                          <tr class="text-secondary">
-                            <th class="col-1" scope="col">No.</th>
+                          <tr class="text-dark">
                             <th class="col-3" scope="col">Price</th>
-                            <th class="col-3" scope="col">Ticket No.</th>
-                            <th class="col-3" scope="col">Start date</th>
-                            <th  scope="col">End date</th>
+                            <th class="col-3" scope="col">Ticket Number</th>
+                            <th class="col-3" scope="col">Start Date</th>
+                            <th class="col-3" scope="col">End date</th>
+                            <th  scope="col">status</th>
                           </tr>
                         </thead>
                         <tbody>
-                          <tr class="text-muted fw-semibold">
-                            <th scope="row">1</th>
-                            <td>Range Rover Sport</td>
-                            <td>000085752257</td>
-                            <td>28th April 2023</td>
-                            <td>29th April 2023</td>
+                          <tr class="text-dark fw-normal">
+                            <th scope="row">Range Rover Sport</th>
+                            <td>0005674674647</td>
+                            <td>28th May 2023</td>
+                            <td>28th May 2023</td>
+                            <td>Running</td>
                           </tr>
                           <tr>
-                            <th scope="row">2</th>
-                            <td>Duffle Bag</td>
-                            <td>000085752257</td>
-                            <td>28th April 2023</td>
-                            <td>29th April 2023</td>
+                            <th scope="row">Range Rover Sport</th>
+                            <td>0005674674647</td>
+                            <td>28th May 2023</td>
+                            <td>28th May 2023</td>
+                            <td>Running</td>
                           </tr>
+                          <tr>
+                            <th scope="row">Range Rover Sport</th>
+                            <td>0005674674647</td>
+                            <td>28th May 2023</td>
+                            <td>28th May 2023</td>
+                            <td>Running</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Range Rover Sport</th>
+                            <td>0005674674647</td>
+                            <td>28th May 2023</td>
+                            <td>28th May 2023</td>
+                            <td>Running</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Range Rover Sport</th>
+                            <td>0005674674647</td>
+                            <td>28th May 2023</td>
+                            <td>28th May 2023</td>
+                            <td>Running</td>
+                          </tr>
+                         
                         </tbody>
                       </table>
                 </div>

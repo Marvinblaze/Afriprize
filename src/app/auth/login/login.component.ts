@@ -55,6 +55,7 @@ export class LoginComponent implements OnInit {
 
   goto(event: any) {
 
+    // this.router.navigate(['homepage']);
     // this.router.navigate(['/homepage']);
 
     type PostBody = {
@@ -92,6 +93,7 @@ export class LoginComponent implements OnInit {
         duration: 5000,
       });
       this.router.navigate(['']);
+      
     })
 
     

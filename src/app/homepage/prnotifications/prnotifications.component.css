@@ -1,0 +1,58 @@
+.mt6{
+    margin-top: 5rem !important;
+}
+
+
+
+.form-check-input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
+    linear-gradient(0deg, #E4E4E4, #E4E4E4);
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+  }
+
+
+
+
+  .search-bar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    background: linear-gradient(0deg, #EDEBEB, #EDEBEB),
+linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+
+    /* background-color: #f2f2f2; */
+    border-radius: 20px;
+    padding: 3px;
+  }
+  
+  .search-input {
+    flex: 1;
+    border: none;
+    padding: 3px 25px;
+    
+  }
+  
+  .fa-search {
+    position: absolute;
+    right: 1rem;
+    color: #555;
+    cursor: pointer;
+  }
+  
+
+  .table-body-margin {
+    margin-top: 20rem !important;
+  }
+  
+  /* .form-check-input[type="checkbox"]:checked {
+
+    background-color: red;
+
+  } */
+  

@@ -23,6 +23,6 @@ ngOnInit(): void {
   }
 
   goto(event: any) {
-    this.router.navigate(['']);
+    this.router.navigate(['homepage']);
   }
 }

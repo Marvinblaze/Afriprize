@@ -1,59 +1,91 @@
-<div class="container-fluid" style="margin-bottom: 20rem">
-  <div class="col-12 mt-3">
-    <h1 class="text-start text-muted poppins fw-bold">Product List</h1>
-    <div class="row mt-5">
-      <div class="col-12 col-md-6 col-lg-3 mb-4" *ngFor="let item of Products" [routerLink]="['/homepage/index/products/products-detail']">
-        <div class="card border border-top-0 shadow rounded-4">
+<div class="container-fluid" style="margin-bottom: 30.25rem; overflow-x: hidden;">
+  <div class="col-12 mt-4">
+    <h3 class="text-start text-muted poppins fw-semibold">Product List</h3>
+
+
+    <div class="col-12">
+      <div class="mt-3">
+        <img src="../../../../assets/images/Half car.svg" alt="car" class="img-fluid car"/>
+      </div>
+
+      <div class="bottom">
+        <div class="msize">
+          <img src="../../../assets/images/Rectangle 952.svg" alt="" class="msize" />
+        </div>
+        <p class="f-16 mt-2 fw-semibold">
+          Buy snickers and stand
+          a chance to win
+        </p>
+        <h6 class="f-22 fw-semibold">2023 McLaren</h6>
+       
+        <button
+          type="button"
+          class="btn btn-light poppins fw-semibold px-5 padt"
+        >
+          Win Now
+        </button>
+        <div class="win">
+        </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+      <div
+        class="col-12 col-md-6 col-lg-3 mb-4 ms-auto"
+        *ngFor="let item of Products"
+        [routerLink]="['/homepage/index/products/products-detail']"
+      >
+        <div class="border border-top-0 shadow rounded-4 dash">
           <img
             src="{{ item.images }}"
-            class="card-img-top mx-auto"
+            class="mx-auto recommend-img"
             alt=""
-            style="height: 300px; width: 100%"
+            
           />
-          <div class="card-img-overlay">
-            <div class="star smallbox">
-              <i class="fa-sharp fa-solid fa-star" style="color: #fdcc0d"></i>
-              4.9
-            </div>
-
-            <div class="text-end" >
-              <img [src]="item.free" alt="" class="mt-6"  />
+          <div class="recommend">
+            <div class="caption star smallbox fw-bold"><i class="fa-sharp fa-solid fa-star" style="color: #fdcc0d;"></i>  4.9</div>
+            
+            <img src="{{item.free}}" alt="" class="img2">
+            <div class="text-end">
             </div>
           </div>
-          <div class="card-body mt-2">
-            <div class="container">
+          <div class="mt-2">
+            <div class="container distance">
               <div class="row">
-                <div class="col-8">
+                <div class="col-7 ">
                   <h3 class="fw-bold poppins fs-6">{{ item.names }}</h3>
-                  <p class="card-text text-dark">800 sold out of 2,000</p>
+                  <p class="card-text text-dark mt-3">800 sold out of 2,000</p>
                   <div
-                    class="progress bg-dange"
+                    class="progress bg-dange mt-1"
                     role="progressbar"
                     aria-label="Basic example"
                     aria-valuenow="0"
                     aria-valuemin="0"
                     aria-valuemax="100"
                   >
-                    <div class="progress-bar brown" style="width: 40%"></div>
+                    <div
+                      class="progress-bar brown"
+                      style="width: 40%"
+                    ></div>
                   </div>
-                  <p class="mb-5">
+                  <p class="mb-5 mt-2">
                     Buy Flipflop for:
-                    <span style="color: #cc9933">7:50</span>
+                    <span style="color: #cc9933">$7:50</span>
                   </p>
                 </div>
-                <div class="col-4">
+                <div class="col-5">
                   <p class="f-10">Draw date:26th April</p>
                 </div>
-
-                <button
-                type="submit"
-                class="btn btn-dark px-5 mb-5 rounded-3"
-                (click)="goto($event)"
-              >
-                Add to cart
-                <i class="fa-solid fa-bag-shopping"></i>
-              </button>
               </div>
+              <button
+              type="submit"
+              class="btn btn-dark mb-5 rounded-3 button-reccomend"
+              
+            >
+              Add to cart
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
             </div>
           </div>
         </div>

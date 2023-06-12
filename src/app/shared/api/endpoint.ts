@@ -9,6 +9,13 @@ export const endpoints = {
     profile: 'user/profile',
     shipping: 'user/saveshipping',
     reset: 'user/resetpassword',
-    delete: 'user/delete'
+    delete: 'user/delete',
+
+
+    //products
+
+    recommend: 'products/recommended',
+    list: 'products/list',
+    listsingle: 'products/list/:id',
   };
   
