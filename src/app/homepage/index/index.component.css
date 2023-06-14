@@ -16,10 +16,11 @@ h5{
 }
 
 .bottom{
-    position: absolute;
+    position: relative;
     color: white;
-    left: 2rem;
-    top: 26rem;
+    /* margin-bottom: -2rem; */
+    margin-top: -18rem;
+    margin-left: 2rem;
 }
 
 .msize{
@@ -209,10 +210,11 @@ accordion section */
     }
     
     .bottom{
-        position: absolute;
+        position: relative;
         color: white;
-        left: 2rem;
-        top: 30rem;
+        /* margin-bottom: -2rem; */
+        margin-top: -18rem;
+        margin-left: 2rem;
     }
     
     .msize{
@@ -381,10 +383,11 @@ accordion section */
     }
     
     .bottom{
-        position: absolute;
+        position: relative;
         color: white;
-        left: 2rem;
-        top: 23rem;
+        /* margin-bottom: -2rem; */
+        margin-top: -18rem;
+        margin-left: 1.5rem;
     }
     
     .msize{
@@ -393,7 +396,7 @@ accordion section */
     }
     
     .win{
-        margin-left: 27rem;
+        margin-left: 24rem;
     }
     
     
@@ -537,10 +540,11 @@ accordion section */
     }
     
     .bottom{
-        position: absolute;
+        position: relative;
         color: white;
-        left: 2rem;
-        top: 23rem;
+        /* margin-bottom: -2rem; */
+        margin-top: -18rem;
+        margin-left: 1.5rem;
     }
     
     .msize{
@@ -549,7 +553,7 @@ accordion section */
     }
     
     .win{
-        margin-left: 27rem;
+        margin-left: 24rem;
     }
     
     
@@ -702,10 +706,11 @@ accordion section */
     }
     
     .bottom{
-        position: absolute;
+        position: relative;
         color: white;
-        left: 2rem;
-        top: 14rem;
+        /* margin-bottom: -2rem; */
+        margin-top: -8rem;
+        margin-left: 1.5rem;
     }
     
     .msize{

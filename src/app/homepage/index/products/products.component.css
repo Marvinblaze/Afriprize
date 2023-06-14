@@ -12,10 +12,11 @@
 
 
 .bottom{
-    position: absolute;
+    position: relative;
     color: white;
-    left: 4rem;
-    top: 20rem;
+    margin-left: 4rem;
+    margin-top: -18rem;
+    margin-bottom: 5rem;
 }
 
 .msize{
@@ -23,18 +24,23 @@
 
 }
 
-.win{
+/* .win{
     margin-left: 30rem;
 
-}
+} */
 
 .padt{
- position: absolute;
-left: 65rem;
-top: 9.6rem;
+ position: relative;
+margin-left: 60rem;
+margin-top: -5.6rem;
 width: 20rem;
 
 
+}
+
+
+.wrap{
+    display: none;
 }
 
 
@@ -151,10 +157,11 @@ width: 20rem;
     }
     
     .bottom{
-        position: absolute;
+        position: relative;
         color: white;
-        left: 4rem;
-        top: 20rem;
+        margin-left: 4rem;
+        margin-top: -18rem;
+        margin-bottom: 5rem;
     }
     
     .msize{
@@ -164,12 +171,15 @@ width: 20rem;
     
 
     .padt{
-     position: absolute;
-    left: 60rem;
-    top: 10rem;
-    width: 20rem;
-    
-    
+        position: relative;
+       margin-left: 60rem;
+       margin-top: -9.6rem;
+       width: 20rem;
+       
+       
+       }
+       .wrap{
+        display: none;
     }
     
 
@@ -268,10 +278,11 @@ width: 20rem;
 
    
     .bottom{
-        position: absolute;
+        position: relative;
         color: white;
-        left: 3rem;
-        top: 17rem;
+        margin-left: 4rem;
+        margin-top: -18rem;
+        margin-bottom: 5rem;
     }
     
     .msize{
@@ -280,13 +291,13 @@ width: 20rem;
     }
     
     .padt{
-     position: absolute;
-    left: 33rem;
-    top: 8rem;
-    width: 20rem;
-    
-    
-    }
+        position: relative;
+       margin-left: 32rem;
+       margin-top: -6.6rem;
+       width: 20rem;
+       
+       
+       }
     
 
 
@@ -374,10 +385,11 @@ width: 20rem;
 
     
     .bottom{
-        position: absolute;
+        position: relative;
         color: white;
-        left: 3rem;
-        top: 17rem;
+        margin-left: 4rem;
+        margin-top: -16rem;
+        margin-bottom: 3rem;
     }
     
     .msize{
@@ -386,13 +398,13 @@ width: 20rem;
     }
     
     .padt{
-     position: absolute;
-    left: 25rem;
-    top: 6rem;
-    width: 15rem;
-    
-    
-    }
+        position: relative;
+       margin-left: 23rem;
+       margin-top: -6.6rem;
+       width: 15rem;
+       
+       
+       }
 
 
 
@@ -494,38 +506,45 @@ width: 20rem;
         height: 190px;
     }
     
+     
     .bottom{
-        position: absolute;
+        position: relative;
         color: white;
-        left: 1rem;
-        top: 12rem;
+        margin-left: 1rem;
+        margin-top: -8rem;
+        margin-bottom: 3rem;
     }
     
+    
     .msize{
-        width: 2.5rem
+        width: 2rem
     
     }
     
     .padt{
-     position: absolute;
-    left: 11.2rem;
-    top: 3rem;
-    width: auto;
-    font-size: 10px;
-    
-    
+        position: relative;
+       margin-left: 14rem;
+       margin-top: -4.6rem;
+       width: 5rem;
+       font-size: 11px;
+       
+       
+       }
+
+       .wrap{
+        display: flex;
     }
 
 
     .px-5{
-        padding-left: 2rem !important;
-        padding-right: 2rem !important;
+        padding-left: 0rem !important;
+        padding-right: 0rem !important;
     }
 
 
     .f-16{
         
-        font-size: 10px !important;
+        font-size: 9px !important;
     }
 
     .f-22{

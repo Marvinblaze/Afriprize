@@ -3,7 +3,7 @@
 
 /* Profile section */
 .profile_page{
-    height: 130vh;
+    height: 140vh;
     position: relative;
     overflow: auto;
     background:linear-gradient(0deg, rgba(217, 217, 217, 0.5), rgba(217, 217, 217, 0.5));
@@ -192,7 +192,11 @@
 @media (min-width: 1025px) and (max-width: 1441px) {
   
   
+  .profile_page{
+    height: 100vh;
+    overflow: auto;
 
+  }
 
   /* balance section */
 
@@ -207,7 +211,7 @@
 
 
   .profile_page{
-    height: 130vh;
+    height: 100vh;
     overflow: auto;
 
   }
@@ -278,7 +282,7 @@
 
 
   .profile_page{
-    height: 200vh;
+    height: 100vh;
     overflow: auto;
 
   }
@@ -350,7 +354,7 @@
   /* profile section */
 
   .profile_page{
-    height: 250vh;
+    height: 100vh;
     overflow: auto;
 
   }

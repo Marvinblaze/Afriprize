@@ -11,16 +11,16 @@ export class ProductsDetailComponent implements OnInit {
 
   product: any[]= [
     {
-      images: '../../../../../assets/images/Rectangle 955 (1).svg'
+      images: '../../../../../assets/images/flipflop1.svg'
     },
     {
-      images: '../../../../../assets/images/Rectangle 956 (1).svg'
+      images: '../../../../../assets/images/flipflop2.svg'
     },
     {
-      images: '../../../../../assets/images/Rectangle 955 (1).svg'
+      images: '../../../../../assets/images/flipflop1.svg'
     },
     {
-      images: '../../../../../assets/images/Rectangle 956 (1).svg'
+      images: '../../../../../assets/images/flipflop2.svg'
     }
   ];
 
