@@ -117,6 +117,7 @@ export class PasswordComponent implements OnInit {
 
   back(event: any) {
     this.router.navigate(['register/contact']);
+    const contactobject = JSON.parse(sessionStorage.getItem('contact')!)
   }
 
 }

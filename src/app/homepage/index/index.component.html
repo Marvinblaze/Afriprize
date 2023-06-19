@@ -39,9 +39,9 @@
               <div class="border px-4 pad mb-3 mx-md-2">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex flex-column ">
-                    <h5 class="poppins-bold text-dark fw-bold">
+                    <h3 class="poppins-bold text-dark fw-bold">
                       Win Ferrari
-                    </h5>
+                    </h3>
                     <p class="text-dark f-16">
                       Stand a chance to win <br />2023 ferrari
                     </p>
@@ -79,9 +79,9 @@
               <div class="border px-4 pad mb-4 mx-md-2">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex flex-column ">
-                    <h5 class="poppins-bold text-dark fw-bold">
+                    <h3 class="poppins-bold text-dark fw-bold">
                       Win Ferrari
-                    </h5>
+                    </h3>
                     <p class="text-dark f-16">
                       Stand a chance to win <br />2023 ferrari
                     </p>
@@ -126,20 +126,22 @@
         <div class="row mt-2">
           <div
             class="col-12 col-md-6 col-lg-3 mb-4 ms-auto  "
-            *ngFor="let item of Products"
-            [routerLink]="['/homepage/index/products']"
+            *ngFor="let item of allProducts"
+            [routerLink]="['/homepage/index/products/products-detail']"
+            (click)="scrollToTop()"
           >
             <div class="border border-top-0 shadow rounded-4 dash">
               <img
-                src="{{ item.images }}"
-                class="mx-auto recommend-img"
-                alt=""
-                
-              />
+            id="targetedImage"
+            class="mx-auto recommend-img"
+            alt="targeted picture"
+            src="{{ getTargetedImageUrl1() }}"
+            
+          />
               <div class="recommend">
                 <div class="caption star smallbox fw-bold"><i class="fa-sharp fa-solid fa-star" style="color: #fdcc0d;"></i>  4.9</div>
                 
-                <img src="{{item.free}}" alt="" class="img2">
+                <img id="targetedImage" src="{{ getTargetedImageUrl() }}" alt="Second Picture" class="img2" />
                 <div class="text-end">
                 </div>
               </div>
@@ -147,7 +149,7 @@
                 <div class="container distance">
                   <div class="row">
                     <div class="col-7 ">
-                      <h3 class="fw-bold poppins fs-6">{{ item.names }}</h3>
+                      <h3 class="fw-bold poppins fs-6">{{ item.product_name }}</h3>
                       <p class="card-text text-dark mt-3">800 sold out of 2,000</p>
                       <div
                         class="progress bg-dange mt-1"
@@ -164,7 +166,7 @@
                       </div>
                       <p class="mb-5 mt-2">
                         Buy Flipflop for:
-                        <span style="color: #cc9933">$7:50</span>
+                        <span style="color: #cc9933">{{item.product_price}}</span>
                       </p>
                     </div>
                     <div class="col-5">
@@ -174,6 +176,7 @@
                   <button
                   type="submit"
                   class="btn btn-dark mb-5 rounded-3 button-reccomend"
+                  (click)="addtocart(item)"
                   
                 >
                   Add to cart
@@ -187,7 +190,7 @@
 
         <div class="text-center">
 
-            <a [routerLink]="['index/products']" class="hver fs-4">See All</a>
+            <a [routerLink]="['index/products']" (click)="scrollToTop()" class="hver fs-4">See All</a>
         </div>
       </div>
 
@@ -195,11 +198,62 @@
         <div class="col-12 mt-5">
         
             <div class="row">
-              <h1 class="text-start text-muted">F.A.Q</h1>
+              <h3 class="text-start poppins fw-semibold">F.A.Q</h3>
+              <!-- <h1 class="text-start text-muted">F.A.Q</h1> -->
               
-              <div class="col-12 col-lg-9 mt-2">
-                <div class="container mx-6 custom-accordion">
-                    <accordion>
+              <div class="col-12 col-lg-9 mx-6 mt-2">
+                <div class="">
+
+                  <div class="container">
+                    <div class="wrapper">
+                        <button class="toggle" (click)="toggleAccordion(1)">
+                          What is AfrPrize and how does it work?
+                            <i class="fas fa-plus icon" [ngClass]="{'fa-minus': isAccordionOpen(1)}"></i>
+                        </button>
+                        <div class="content" [ngClass]="{'open': isAccordionOpen(1)}">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <button class="toggle">
+                            How do I apply the coupon?
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error doloremque, quibusdam qui necessitatibus autem aperiam reprehenderit? Ipsum maiores dolore inventore ea. Accusantium fuga eius laboriosam iusto blanditiis doloremque ullam?</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <button class="toggle">
+                            How do I become a member?
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <button class="toggle">
+                            How do I become a member?
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <button class="toggle">
+                            How do I become a member?
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
+                        </div>
+                    </div>
+                </div>
+                  
+
+                    <!-- <accordion>
                       <accordion-group
                         class="mt-5 border"
                         [panelClass]="customClass"
@@ -361,7 +415,7 @@
                           Learn more
                         </button>
                       </accordion-group>
-                    </accordion>
+                    </accordion> -->
                 </div>
               </div>
             </div>

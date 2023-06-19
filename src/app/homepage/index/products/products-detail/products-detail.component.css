@@ -102,8 +102,10 @@
 
 .recommend .img2{
     position: relative;
+    width: 90px;
     top: -9rem;
-    margin-left: 16rem;
+    margin-left: 13rem;
+ 
 }
 
 .distance{
@@ -284,8 +286,9 @@
 
 .recommend .img2{
     position: relative;
+    width: 105px;
     top: -12rem;
-    margin-left: 15.5rem;
+    margin-left: 13.5rem;
 }
 
 .distance{

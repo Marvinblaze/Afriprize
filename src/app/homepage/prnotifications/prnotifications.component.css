@@ -10,8 +10,10 @@
     -moz-appearance: none;
     width: 30px;
     height: 30px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
-    linear-gradient(0deg, #E4E4E4, #E4E4E4);
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)),
+    linear-gradient(0deg, #E4E4E4, #E4E4E4); */
+
+    background: #f2f2f2;
     outline: none;
     transition: border-color 0.2s ease-in-out;
   }
@@ -50,9 +52,9 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
     margin-top: 20rem !important;
   }
   
-  /* .form-check-input[type="checkbox"]:checked {
+  .form-check-input[type="checkbox"]:checked {
 
-    background-color: red;
+    background-color: black;
 
-  } */
+  } 
   

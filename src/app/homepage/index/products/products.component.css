@@ -1,5 +1,15 @@
 
 
+.move{
+    margin-left: 4rem;
+}
+
+
+
+.padt:hover{
+    font-size: 19px;
+    
+}
 .pointer{
     cursor: pointer;
 }
@@ -67,14 +77,34 @@ width: 20rem;
 
 }
 
+
+
+/* .recommend .img2{
+    position: relative;
+    width: 105px;
+    top: -12rem;
+    margin-left: 13.5rem;
+} */
+
 .recommend .img2{
     position: relative;
+    width: 90px;
     top: -9rem;
-    margin-left: 16rem;
+    margin-left: 13rem;
+ 
 }
 
 .distance{
     margin-top: -8rem;
+}
+
+
+.bg-dange{
+    margin-top: -1rem;
+    width: 310px !important;
+    height: 9px;
+    background: #CC99334A !important;
+    
 }
 
 .smallbox{
@@ -188,7 +218,7 @@ width: 20rem;
   /* .recommend section */
   .recommend-img{
     height: 205px; 
-    width: 100%;
+
 }
 
 
@@ -201,15 +231,22 @@ width: 20rem;
 
 .recommend .img2{
     position: relative;
+    width: 105px;
     top: -12rem;
-    margin-left: 15.5rem;
+    margin-left: 13.5rem;
 }
 
 .distance{
     margin-top: -10.5rem;
 }
 
-
+.bg-dange{
+    margin-top: -1rem;
+    width: 310px !important;
+    height: 9px;
+    background: #CC99334A !important;
+    
+}
 
 
 
@@ -325,6 +362,16 @@ width: 20rem;
 .distance{
     margin-top: -7.6rem;
 }
+
+
+.bg-dange{
+    margin-top: -1rem;
+    width: 210px !important;
+    height: 9px;
+    background: #CC99334A !important;
+    
+}
+
 
 .smallbox{
     display: inline-block;
@@ -570,10 +617,10 @@ width: 20rem;
 
 .recommend .img2{
     position: relative;
-    width: 40px;
+    width: 60px;
     top: -4rem;
-    margin-right: 1rem;
-    margin-top: -3.5rem;
+    margin-right: -1rem;
+    margin-top: -3.2rem;
    
 }
 
@@ -582,7 +629,7 @@ width: 20rem;
 }
 
 
-.dash .bg-dange{
+.bg-dange{
     margin-top: -1rem;
     width: 280px !important;
     height:9px;

@@ -1,6 +1,6 @@
 <div class="container-fluid" style="margin-bottom: 30.25rem; overflow-x: hidden;">
   <div class="col-12 mt-4">
-    <h3 class="text-start text-muted poppins fw-semibold">Product List</h3>
+    <h3 class="text-start text-dark poppins fw-semibold move">Product List</h3>
 
 
     <div class="col-12">
@@ -30,22 +30,28 @@
     </div>
 
     <div class="row mt-2">
+
       <div
         class="col-12 col-md-6 col-lg-3 mb-4 ms-auto"
-        *ngFor="let item of Products"
+        *ngFor="let item of allProducts"
         [routerLink]="['/homepage/index/products/products-detail']"
+        (click)=" scrollToTop()"
+        
       >
         <div class="border border-top-0 shadow rounded-4 dash">
           <img
-            src="{{ item.images }}"
+            id="targetedImage"
             class="mx-auto recommend-img"
-            alt=""
+            alt="targeted picture"
+            src="{{ getTargetedImageUrl1() }}"
             
           />
           <div class="recommend">
             <div class="caption star smallbox fw-bold"><i class="fa-sharp fa-solid fa-star" style="color: #fdcc0d;"></i>  4.9</div>
             
-            <img src="{{item.free}}" alt="" class="img2">
+
+            <img id="targetedImage" src="{{ getTargetedImageUrl() }}" alt="Second Picture" class="img2" />
+            <!-- <img src="{{item.free}}" alt="" class="img2"> -->
             <div class="text-end">
             </div>
           </div>
@@ -53,7 +59,7 @@
             <div class="container distance">
               <div class="row">
                 <div class="col-7 ">
-                  <h3 class="fw-bold poppins fs-6">{{ item.names }}</h3>
+                  <h3 class="fw-bold poppins fs-6">{{ item.product_name }}</h3>
                   <p class="card-text text-dark mt-3">800 sold out of 2,000</p>
                   <div
                     class="progress bg-dange mt-1"
@@ -70,7 +76,7 @@
                   </div>
                   <p class="mb-5 mt-2">
                     Buy Flipflop for:
-                    <span style="color: #cc9933">$7:50</span>
+                    <span style="color: #cc9933">₦{{item.product_price}}</span>
                   </p>
                 </div>
                 <div class="col-5">
@@ -80,6 +86,7 @@
               <button
               type="submit"
               class="btn btn-dark mb-5 rounded-3 button-reccomend"
+              (click)="addtocart(item)"
               
             >
               Add to cart

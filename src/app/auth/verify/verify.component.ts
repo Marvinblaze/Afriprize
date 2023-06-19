@@ -72,7 +72,8 @@ verifyForm: FormGroup | any;
 
     this.local.verify(verify).subscribe((res: any) =>
       {
-
+        const {token } = res;
+        this._session.savetoSessionstorage('token', token);
         console.log(res)
         this.verifyForm.reset();
         this.toast.success({
@@ -80,7 +81,7 @@ verifyForm: FormGroup | any;
           summary: 'User is Verified!!!',
           duration: 5000,
         });
-        this.router.navigate(['verify/congratulations']);
+        this.router.navigate(['homepage']);
       },
       (err) =>{
         this.toast.error({

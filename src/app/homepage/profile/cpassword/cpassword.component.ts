@@ -45,6 +45,10 @@ export class CpasswordComponent implements OnInit {
         Validators.minLength(6),
         Validators.required,
       ]),
+      confmpassword: new FormControl('', [
+        Validators.minLength(6),
+        Validators.required,
+      ]),
     });
   }
 
@@ -66,6 +70,7 @@ export class CpasswordComponent implements OnInit {
     type PostBody = {
       oldpassword: string;
       newpassword: string;
+   
     };
 
     const postbody: PostBody = {

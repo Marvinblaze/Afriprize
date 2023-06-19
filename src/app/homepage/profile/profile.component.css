@@ -1,5 +1,27 @@
+/* image upload */
+.upload{
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+  background:  #636363;;
+  width: 32px;
+  height: 32px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
 
+.upload input[type = "file"]{
+  position: absolute;
+  transform: scale(2);
+  opacity: 0;
+}
+
+input[type=file]::-webkit-file-upload-button{
+    cursor: pointer;
+}
 
 /* Profile section */
 .profile_page{
@@ -15,6 +37,11 @@
     color: #636363;
 
   }
+
+
+  .size{
+    width: 200px;
+}
 
   .f20{
     font-size: 20px;
@@ -34,7 +61,7 @@
 
   .bottom{
     position: absolute;
-    bottom: 0;
+    bottom: 1.5rem;
   }
 
 

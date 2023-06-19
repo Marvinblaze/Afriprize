@@ -7,7 +7,9 @@
 
 export const environment = {
   production: false,
-  url:'http://3.10.125.159/api/v1/',
+  // url: 'http://localhost:3001/api/v1/'
+  // url:'http://3.10.125.159/api/v1/',
+  url: 'https://afriprize-backend-production.up.railway.app/api/v1/'
 };
 
 /*

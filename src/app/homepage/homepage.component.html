@@ -29,9 +29,9 @@
 
 
               <div class="input-group">
-                <input type="text" class="form-control bg-secondary text-white" placeholder="">
+                <input type="text" class="form-control bg-secondary text-white" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="">
                 <div class="input-group-append">
-                  <button class="btn btn-outline-secondary" type="button" (click)="listproduct($event)">
+                  <button class="btn btn-outline-secondary" type="button">
                     <i class="fas fa-search"></i>
                   </button>
                 </div>
@@ -99,8 +99,11 @@
                   <li class="nav-item me-3">
                     <a class="nav-link text-light f-10" [routerLink]="['carts']" routerLinkActive="active_link"
                     [routerLinkActiveOptions]="{ exact: true }"
-                      ><i class="fa-solid fa-cart-shopping"></i></a
                     >
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div style="font-size: 8px;" class="badge rounded-pill bg-danger badge-size">{{totalItem}}</div>
+                      </a>
+                    
                   </li>
         
                 </div>

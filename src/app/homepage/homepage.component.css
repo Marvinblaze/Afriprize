@@ -10,6 +10,12 @@
     background-color: #071050;
   }
 
+
+
+  .badge-size{
+    position: absolute;
+    top: 2rem;
+  }
   /* .search-box{
     font-size: 20px;
     border: solid 0.3em;

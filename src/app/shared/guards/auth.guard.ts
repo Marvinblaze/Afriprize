@@ -27,7 +27,7 @@ export class AuthGuard implements CanActivate {
 
     const user = sessionStorage.getItem('token');
 
-    if (this.isadmin) {
+    if (user) {
       
       return true;
     } else{

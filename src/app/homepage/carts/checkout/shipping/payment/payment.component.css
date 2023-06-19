@@ -4,6 +4,9 @@
 }
 
 
+.move{
+  margin-left: 7rem !important;
+}
 .activelink {
     color: #CC9933 !important;
     text-align: center;

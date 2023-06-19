@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
+
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { SessionService } from 'src/app/shared/storage/session.service';
@@ -28,6 +29,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.formInit();
+
+    this.signForm.setValue({email: sessionStorage.getItem('email'), phone: sessionStorage.getItem('phone')})
   }
 
 
@@ -39,7 +42,6 @@ export class ContactComponent implements OnInit {
       ]),
     });
   }
-
 
   goto(event: any) {
 
@@ -53,33 +55,31 @@ export class ContactComponent implements OnInit {
       phone: this.signForm.value.phone,
     };
 
+    sessionStorage.removeItem('email')
+    sessionStorage.removeItem('phone')
+
+
+    sessionStorage.setItem('email', this.signForm.value.email || '')
+    sessionStorage.setItem('phone', this.signForm.value.phone || '')
+
 
     const object = this._session.readtoSessionstorage('user');
     const contactobject = JSON.stringify(postbody);
     this._session.savetoSessionstorage('contact', contactobject);
-    this.signForm.reset();
+    // this.signForm.reset();
     
 
-    // this.local.signin(postbody).subscribe((res =>
-    //   {
-    //     const userobject = JSON.stringify(postbody);
-    //     this._session.savetoSessionstorage('user', userobject);
-    //     this.signForm.reset();
-    //     this.router.navigate(['register/contact']);
-
-    //     console.log(this.local.signin(postbody).subscribe((res =>
-    //       {
-    //         const userobject = JSON.stringify(postbody);
-    //         this._session.savetoSessionstorage('user', userobject);
-    //         this.signForm.reset();
-    //         this.router.navigate(['register/contact']);})))
-        
-    //   }))
+    this.local.signin(postbody).subscribe((res =>
+      {
+        const userobject = JSON.stringify(postbody);
+        this._session.savetoSessionstorage('user', userobject);
+        this.signForm.reset();
+        // this.router.navigate(['register/contact']);        
+      }))
     this.router.navigate(['register/password']);
   }
 
   back(event: any) {
     this.router.navigate(['register']);
   }
-
 }

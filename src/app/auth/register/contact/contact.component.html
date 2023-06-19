@@ -45,11 +45,11 @@
                 </div>
               </div>
   
-            <div class="col-12 mt-4">
+            <div class="col-12 mt-3">
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                     <label class="form-check-label text-dark poppins fw-bold" for="exampleRadios1">
-                        <h3 class="mx-5">
+                        <h3 class="mx-4">
                             Name
                         </h3>
                     </label>
@@ -57,7 +57,7 @@
                   <div class="form-check form-check-inline">
                     <input class="form-check-input " type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked>
                     <label class="form-check-label text-dark poppins fw-bold" for="inlineRadio2">
-                        <h3 class="mx-5">
+                        <h3 class="mx-4">
                             Contact
                         </h3>
                     </label>
@@ -65,7 +65,7 @@
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
                     <label class="form-check-label" for="inlineRadio3">
-                        <h3 class="mx-5">
+                        <h3 class="mx-4">
                             Password
                         </h3></label>
                   </div>
@@ -73,9 +73,10 @@
   
               <div class="col-12">
   
-                  <form class="mt-5" [formGroup]="signForm">
+                  <form class="mt-5" [formGroup]="signForm" (ngSubmit)="goto($event)"> 
                       <div class="mb-3">
                           <input type="email" formControlName="email" class="form-control py-3 rounded-4" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                          <!-- <p>Email: {{signForm.value.email}}</p> -->
                           <div id="emailHelp" class="form-text fs-9" style="color:#515151;">A valid email is require for pin resetting and withdrawal request</div>
                         </div>
                         <div class="mb-3">

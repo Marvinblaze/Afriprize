@@ -42,7 +42,7 @@
               
               
               <div class="d-flex align-items-center justify-content-between space">
-                <h1 class="fw-bold mt-5 ">Swedish Flipflop</h1>
+                <h3 class="fw-bold mt-5 text-dark">Swedish Flipflop</h3>
                 <h3 class="fw-bold mt-5 text-end ms-6 f16">$7.50</h3>
 
               </div>
@@ -81,16 +81,16 @@
                   </div>
                 </div>
     
-                <div class="col-6 col-md-6 col-lg-6">
+                <div class="col-6 col-md-6 col-lg-6"*ngFor="let item of allProducts">
                   
                   <div class="text-center">
                     <button
                     type="submit"
                     class="btn btn-info mb-5 rounded-3 fw-bold"
-                    
+                    (click)="addtocart(item)"
                   >
                     Add to cart
-                    <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+            
                   </button>
       
                   </div>
@@ -109,8 +109,78 @@
 
 
   <div class="col-12 mt-4">
-    <h3 class="text-start poppins fw-bold mt-2 text-muted">Recommend</h3>
-  <div class="row mt-3">
+    <h3 class="text-start poppins fw-bold mt-2 text-dark">Recommend</h3>
+
+    <div class="row mt-2">
+
+      <div
+        class="col-12 col-md-6 col-lg-3 mb-4 ms-auto"
+        *ngFor="let item of allProducts"
+        [routerLink]="['/homepage/index/products/products-detail']"
+        (click)=" scrollToTop()"
+        
+      >
+        <div class="border border-top-0 shadow rounded-4 dash">
+          <img
+            id="targetedImage"
+            class="mx-auto recommend-img"
+            alt="targeted picture"
+            src="{{ getTargetedImageUrl1() }}"
+            
+          />
+          <div class="recommend">
+            <div class="caption star smallbox fw-bold"><i class="fa-sharp fa-solid fa-star" style="color: #fdcc0d;"></i>  4.9</div>
+            
+
+            <img id="targetedImage" src="{{ getTargetedImageUrl() }}" alt="Second Picture" class="img2" />
+            <!-- <img src="{{item.free}}" alt="" class="img2"> -->
+            <div class="text-end">
+            </div>
+          </div>
+          <div class="mt-2">
+            <div class="container distance">
+              <div class="row">
+                <div class="col-7 ">
+                  <h3 class="fw-bold poppins fs-6">{{ item.product_name }}</h3>
+                  <p class="card-text text-dark mt-3">800 sold out of 2,000</p>
+                  <div
+                    class="progress bg-dange mt-1"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div
+                      class="progress-bar brown"
+                      style="width: 40%"
+                    ></div>
+                  </div>
+                  <p class="mb-5 mt-2">
+                    Buy Flipflop for:
+                    <span style="color: #cc9933">₦{{item.product_price}}</span>
+                  </p>
+                </div>
+                <div class="col-5">
+                  <p class="f-10">Draw date:26th April</p>
+                </div>
+              </div>
+              <button
+              type="submit"
+              class="btn btn-dark mb-5 rounded-3 button-reccomend"
+             
+              
+            >
+              Add to cart
+              <i class="fa-solid fa-bag-shopping"></i>
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- <div class="row mt-3">
   <div
         class="col-12 col-md-6 col-lg-3 mb-4 ms-auto"
         *ngFor="let item of recommend"
@@ -170,71 +240,7 @@
           </div>
         </div>
       </div>
-      </div>
+      </div> -->
       </div>
 
-    <!-- <div class="col-12 mt-3">
-        <h1 class="text-start text-muted poppins fw-bold" >Similar categories</h1>
-        <div class="row mt-5">
-          <div
-            class="col-12 col-md-6 col-lg-3 mb-4"
-            *ngFor="let item of recommend"
-          >
-            <div class="card border border-top-0 shadow rounded-4" >
-              <img
-                src="{{ item.images }}"
-               
-                class="card-img-top mx-auto"
-                alt=""
-                style="height: 300px; width: 100%"
-              />
-              <div class="card-img-overlay"  >
-                <div class="list box"><i class="fa-sharp fa-solid fa-star" style="color: #fdcc0d;"></i>  4.9</div>
-                
-                <div class="text-end">
-                  <img src="{{item.free}}" alt="" class="mt-6">
-                </div>
-              </div>
-              <div class="card-body mt-2">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-8">
-                      <h3 class="fw-bold poppins fs-6">{{ item.names }}</h3>
-                      <p class="card-text text-dark">800 sold out of 2,000</p>
-                      <div
-                        class="progress bg-dange"
-                        role="progressbar"
-                        aria-label="Basic example"
-                        aria-valuenow="0"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      >
-                        <div
-                          class="progress-bar brown"
-                          style="width: 40%"
-                        ></div>
-                      </div>
-                      <p class="mb-5">
-                        Buy Flipflop for:
-                        <span style="color: #cc9933">$7:50</span>
-                      </p>
-                    </div>
-                    <div class="col-4">
-                      <p class="f-10">Draw date:26th April</p>
-                    </div>
-                    <button
-                    type="submit"
-                    class="btn btn-dark px-5 mb-5 rounded-3"
-                    
-                  >
-                    Add to cart
-                    <i class="fa-solid fa-bag-shopping"></i>
-                  </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-</div> -->
-
+  

@@ -55,7 +55,7 @@ export class LoginComponent implements OnInit {
 
   goto(event: any) {
 
-    this.router.navigate(['homepage']);
+    // this.router.navigate(['homepage']);
     // this.router.navigate(['/homepage']);
 
     type PostBody = {
@@ -72,29 +72,29 @@ export class LoginComponent implements OnInit {
 
     };
 
-    // this._auth.login(postbody).subscribe((res: any) =>{
+    this._auth.login(postbody).subscribe((res: any) =>{
 
-    //   const {token } = res;
-    //   this._session.savetoSessionstorage('token', token);
+      const {token } = res;
+      this._session.savetoSessionstorage('token', token);
 
-    //   this.loginForm.reset()
-    //   this.toast.success({
-    //     detail: 'Nice memory',
-    //     summary: res.message,
-    //     duration: 5000,
-    //   });
-    //   this.router.navigate(['homepage']);
+      this.loginForm.reset()
+      this.toast.success({
+        detail: 'Nice memory',
+        summary: res.message,
+        duration: 5000,
+      });
+      this.router.navigate(['homepage']);
       
-    //   console.log(res.data);
-    // }, (err) =>{
-    //   this.toast.error({
-    //     detail: 'Opps',
-    //     summary: 'Invalid Login Credential!!!',
-    //     duration: 5000,
-    //   });
-    //   this.router.navigate(['']);
+      console.log(res.data);
+    }, (err) =>{
+      this.toast.error({
+        detail: 'Opps',
+        summary: 'Invalid Login Credential!!!',
+        duration: 5000,
+      });
+      this.router.navigate(['']);
       
-    // })
+    })
 
     
   }

@@ -30,6 +30,8 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
     this.formInit();
+
+    this.signForm.setValue({firstname: sessionStorage.getItem('firstname'),lastname: sessionStorage.getItem('lastname')})
   }
 
 
@@ -45,7 +47,7 @@ export class RegisterComponent implements OnInit {
 
   goto(event: any) {
 
-
+    
     type PostBody = {
       firstname: string;
       lastname: string;
@@ -55,30 +57,36 @@ export class RegisterComponent implements OnInit {
       firstname: this.signForm.value.firstname,
       lastname: this.signForm.value.lastname,
     };
+    
+    sessionStorage.removeItem('firstname')
+    sessionStorage.removeItem('lastname')
 
+
+    sessionStorage.setItem('firstname', this.signForm.value.firstname || '')
+    sessionStorage.setItem('lastname', this.signForm.value.lastname || '')
 
     const userobject = JSON.stringify(postbody);
     sessionStorage.setItem('user', userobject)
-    // this._session.savetoSessionstorage({...postbody});
+  
     this.signForm.reset();
 
     this.router.navigate(['register/contact']);
 
-    // this.local.signin(postbody).subscribe((res =>
-    //   {
-    //     const userobject = JSON.stringify(postbody);
-    //     this._session.savetoSessionstorage('user', userobject);
-    //     this.signForm.reset();
-    //     this.router.navigate(['register/contact']);
+    this.local.signin(postbody).subscribe((res =>
+      {
+        const userobject = JSON.stringify(postbody);
+        this._session.savetoSessionstorage('user', userobject);
+        this.signForm.reset();
+        this.router.navigate(['register/contact']);
 
-    //     console.log(this.local.signin(postbody).subscribe((res =>
-    //       {
-    //         const userobject = JSON.stringify(postbody);
-    //         this._session.savetoSessionstorage('user', userobject);
-    //         this.signForm.reset();
-    //         this.router.navigate(['register/contact']);})))
+        console.log(this.local.signin(postbody).subscribe((res =>
+          {
+            const userobject = JSON.stringify(postbody);
+            this._session.savetoSessionstorage('user', userobject);
+            this.signForm.reset();
+            this.router.navigate(['register/contact']);})))
         
-    //   }))
+      }))
 
 
   }

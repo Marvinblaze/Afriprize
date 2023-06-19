@@ -37,4 +37,12 @@ export class ProfileService {
     });
     return this.http.post<any>(`${environment.url}${endpoints.delete}`,{headers});
 }
+
+
+
+
+imageupdate(body:any): Observable<any>{
+  return this.http.post<any>(`${environment.url}${endpoints.image}`,body);
+
+}
 }

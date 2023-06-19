@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 import { AuthenticateService } from 'src/app/shared/api/authentication/authenticate.service';
 import { SessionService } from 'src/app/shared/storage/session.service';
 
@@ -19,6 +20,7 @@ export class ShippingComponent implements OnInit {
     private _fb: FormBuilder,
     private _auth: AuthenticateService,
     private _session: SessionService,
+    private locate:Location,
   ) {}
 
 
@@ -76,4 +78,10 @@ export class ShippingComponent implements OnInit {
 
     
   }
+
+
+  goBack(): void {
+    this.locate.back();
+  }
+
 }

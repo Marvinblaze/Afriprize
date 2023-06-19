@@ -3,6 +3,10 @@
     height: auto;
 }
 
+.pointer{
+    cursor: pointer;
+}
+
 
   .m6{
         margin-top: 1rem;
@@ -11,6 +15,34 @@
     .m5{
         margin-top: 2rem;
     }
+
+
+
+
+    /* //empty cart */
+    .center{
+        position: relative;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        margin-left: 35rem;
+        /* transform: translate(); */
+    }
+
+
+    .center img {
+        text-decoration: none;
+        color: inherit;
+        border: none;
+        outline: none;
+        height: 162px;
+        width: 250px;
+        margin: 20px 30px;
+    }
+
+    .center .margin{
+        margin-left: 3rem;
+    }
+
 
 
  

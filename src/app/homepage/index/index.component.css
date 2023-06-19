@@ -63,10 +63,17 @@ h5{
     background: #CC99334A !important;
     
 }
+
 .margin{
     margin-left: 5rem !important;
     width: 600px;
     
+}
+
+.padt:hover{
+    font-size: 18px;
+    color: black;
+    background-color: white;
 }
 
 
@@ -93,8 +100,10 @@ h5{
 
 .recommend .img2{
     position: relative;
+    width: 90px;
     top: -9rem;
-    margin-left: 16rem;
+    margin-left: 13rem;
+ 
 }
 
 .distance{
@@ -155,7 +164,7 @@ h5{
 }
 
 .mx-6{
-    margin-left: 22rem;
+    margin-left: 12rem;
 }
 
 
@@ -168,6 +177,87 @@ h5{
 /* 
 accordion section */
 
+
+/* *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+/* body{
+    background-color: #0084e9;
+} */
+/* .container{
+    width: 45%;
+    min-width: 500px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+} */
+
+.fa-minus {
+    transform: rotate(45deg);
+  }
+  
+  .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .content.open {
+    max-height: 1000px;
+  }
+.wrapper{
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0,0,50,0.2);
+}
+
+
+.wrapper .content {
+    display: none;
+    padding: 10px;
+  }
+  
+  .wrapper.open .content {
+    display: block;
+  }
+.toggle,
+.content{
+    font-family: "Poppins",sans-serif;
+}
+.toggle{
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #111130;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+.content{
+    position: relative;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    height: 0;
+    /* overflow: hidden; */
+    transition: all 1s;
+}
+  
+.accordion-color{
+    background-color: white;
+}
 .accordion-decoration{
     text-decoration: none;
 }
@@ -175,6 +265,7 @@ accordion section */
 
 /* see all */
 .hver{
+    color: black;
     text-decoration: none;
 }
 .hver:hover{
@@ -183,6 +274,9 @@ accordion section */
     border-bottom: 4px solid #010038;
     
 }
+
+
+
 
 
 
@@ -284,9 +378,11 @@ accordion section */
 
 .recommend .img2{
     position: relative;
+    width: 105px;
     top: -12rem;
-    margin-left: 15.5rem;
+    margin-left: 13.5rem;
 }
+
 
 .distance{
     margin-top: -10.5rem;
