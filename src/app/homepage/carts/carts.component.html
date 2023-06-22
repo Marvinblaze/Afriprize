@@ -19,6 +19,10 @@
                   class="border rounded-1 mb-5 w-100 p-2"
                   *ngFor="let item of allProducts; let i = index"
                 >
+                <button class="delete-button" (click)="removeItem(i)">
+                <i class="fas fa-trash"></i>
+                Delete
+              </button>
                   <div class="row">
                     <div class="d-flex justify-content-between">
                       <div class="d-flex">
@@ -54,7 +58,7 @@
                                   <button
                                 class="btn-secondary rounded-3 p1"
                                 type="button"
-                                (click)="decrement()"
+                                (click)="decrement(i)"
                               >
                               -
                               </button>
@@ -62,7 +66,7 @@
                               <button
                                 class="btn-secondary rounded-3 p1 ms-3"
                                 type="button"
-                                (click)="increment()"
+                                (click)="increment(i)"
                                 >
                                   +
                               </button>
@@ -75,127 +79,7 @@
             
                 </div>
               </div>
-              <!-- <div class="mt-2 col-12">
-                <div
-                  class="border rounded-1 mb-5 w-100 p-2"
-                >
-                  <div class="row">
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex">
-                        <img
-                        src="../../../assets/images/Rectangle 41.svg"
-                            alt=""
-                            class="img-size mx-4 mt-4"
-                            />
-                            <div
-                            class="d-flex flex-column m6"
-                          >
-                            <h5 class="poppins fw-semibold mt-3 textsize">
-                              Cotton shirt Regular Fit<br />
-                              Cotton shirt Regular Fit
-                            </h5>
-      
-                            <h6 class="poppins fw-bold m5">
-                              $20
-                            </h6>
-                          </div>
-  
-                      </div>
-                      <div class="d-flex mb-2 m6">
-                          <div
-                          class="d-flex flex-column mt-3"
-                          >
-                          <div class="form-check ms-5 mb-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    
-                          </div>
-  
-                              <div class="d-flex m5">
-                                  <button
-                                class="btn-secondary rounded-3 p1"
-                                type="button"
-                                (click)="decrement()"
-                              >
-                              -
-                              </button>
-                              <p class="poppins fw-semibold ms-4 t2">{{count}}</p>
-                              <button
-                              class="btn-secondary rounded-3 p1 ms-3"
-                                type="button"
-                                (click)="increment()"
-                              >
-                                  +
-                              </button>
-                            </div>
-                          </div>
-  
-                      </div>
-                    </div>
-                  </div>
-            
-                </div>
-              </div>
-              <div class="mt-2 col-12">
-                <div
-                  class="border rounded-1 mb-5 w-100 p-2"
-                >
-                <div class="row">
-                  <div class="d-flex justify-content-between">
-                      <div class="d-flex">
-                          <img
-                            src="../../../assets/images/Rectangle 41.svg"
-                            alt=""
-                            class="img-size mx-4 mt-4"
-                          />
-                          <div
-                          class="d-flex flex-column m6"
-                          >
-                            <h5 class="poppins fw-semibold mt-3 textsize">
-                              Cotton shirt Regular Fit<br />
-                              Cotton shirt Regular Fit
-                            </h5>
-      
-                            <h6 class="poppins fw-bold m5">
-                              $20
-                            </h6>
-                          </div>
-  
-                        </div>
-                      <div class="d-flex mb-2 m6">
-                          <div
-                          class="d-flex flex-column mt-3"
-                          >
-                          <div class="form-check ms-5 mb-5">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    
-                          </div>
-                          
-                              <div class="d-flex m5">
-                                  <button
-                                class="btn-secondary rounded-3 p1"
-                                type="button"
-                                (click)="decrement()"
-                                >
-                              -
-                              </button>
-                              <p class="poppins fw-semibold ms-4 t2">{{count}}</p>
-                              <button
-                                class="btn-secondary rounded-3 p1 ms-3"
-                                type="button"
-                                (click)="increment()"
-                              >
-                              +
-                            </button>
-                          </div>
-                        </div>
-  
-                      </div>
-                    </div>
-                  </div>
-            
-                </div>
-              </div> -->
-              
+
   
             
             </div>
@@ -204,9 +88,9 @@
             <div class="col-12 col-lg-6"  >
               <div class="mx-5">
   
-                <div class="d-flex align-items-center justify-content-between mt-5 mx-5">
+                <div class="d-flex align-items-center justify-content-between mt-5 mx-5" >
                       <h5 class="mx-5 poppins text-muted f-16">Sub-Total</h5>
-                      <h6 class="mx-5 poppins fw-bold">₦{{grandTotal}}</h6>
+                      <h6 class="mx-5 poppins fw-bold">₦{{ grandTotal }}</h6>
       
                   </div>
   
@@ -224,8 +108,8 @@
                   </div>
   
                   <div class="d-flex align-items-center justify-content-between mt-5 mx-5">
-                    <h3 class="mx-5 poppins fw-bold">Total</h3>
-                    <h4 class="mx-5 poppins fw-bold">₦{{Total}}</h4>
+                    <h3 class="mx-5 poppins fw-bold">Total:</h3>
+                    <h4 class="mx-5 poppins fw-bold">₦ {{ Total }}</h4>
                     
                   </div>
                   

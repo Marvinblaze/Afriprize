@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 
 import { DrawsRoutingModule } from './draws-routing.module';
 import { DrawsComponent } from './draws.component';
@@ -12,6 +12,11 @@ import { DrawsComponent } from './draws.component';
   imports: [
     CommonModule,
     DrawsRoutingModule
+  ],
+
+  providers: [
+    DatePipe // Add DatePipe to the providers array
   ]
+
 })
 export class DrawsModule { }

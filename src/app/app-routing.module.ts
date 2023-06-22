@@ -20,6 +20,7 @@ const routes: Routes = [
       import('./auth/register/register.module').then((m) => m.RegisterModule),
   },
   { path: 'verify', loadChildren: () => import('./auth/verify/verify.module').then(m => m.VerifyModule) },
+  { path: 'forgetpassword', loadChildren: () => import('./auth/forgetpassword/forgetpassword.module').then(m => m.ForgetpasswordModule) },
 ];
 
 @NgModule({

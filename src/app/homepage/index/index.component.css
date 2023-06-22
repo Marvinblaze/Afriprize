@@ -124,7 +124,7 @@ h5{
 }
 
 .button-reccomend{
-    margin-left: 3rem !important;
+    margin-left: 1.5rem !important;
     padding-left: 5rem;
     padding-right: 5rem;
 }
@@ -226,6 +226,8 @@ accordion section */
   
   .wrapper.open .content {
     display: block;
+    max-height: 10000px;
+    
   }
 .toggle,
 .content{
@@ -250,7 +252,8 @@ accordion section */
     font-size: 14px;
     text-align: justify;
     line-height: 30px;
-    height: 0;
+    max-height: 0;
+    
     /* overflow: hidden; */
     transition: all 1s;
 }

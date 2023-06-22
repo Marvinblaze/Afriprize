@@ -22,7 +22,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'index/products/products-detail',
+        path: 'index/products/:id',
         loadChildren: () =>
           import(
             './index/products/products-detail/products-detail.module'

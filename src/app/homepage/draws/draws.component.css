@@ -1,3 +1,22 @@
+.img-fluid{
+    width: 20% !important;
+}
+
+
+.empty-draws-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh; /* Adjust the height as needed */
+  }
+  
+  .empty-draws-message {
+    text-align: center;
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    color: #555; /* Adjust the color as needed */
+  }
+
+
 .carousel-item img {
     margin: 0 auto;
   }
@@ -15,7 +34,7 @@
 
 
   .Images{
-    width: 75%;
+    width: 80%;
   }
   
 

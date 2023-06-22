@@ -42,7 +42,7 @@
             <h4 class="text-start fw-bold poppins">
               Order review & Billing summary
             </h4>
-            <h6 class="text-start poppins mt-3">{{totalItem}} items in cart</h6>
+            <h6 class="text-start poppins mt-3" >{{count.quantity}} items in cart</h6>
           </div>
         </div>
         <div class="col-12 col-md-6 text-end mb-3">
@@ -67,6 +67,10 @@
                 class="border rounded-1 mb-5 w-100 px-2"
                 *ngFor="let item of products; let i = index"
               >
+              <!-- <button class="delete-button" (click)="removeItem(i)">
+                <i class="fas fa-trash"></i>
+                Delete
+              </button> -->
                 <div class="row">
                   <div class="d-flex justify-content-between">
                     <div class="d-flex">
@@ -102,15 +106,18 @@
                                 <button
                               class="btn-secondary rounded-3 p1"
                               type="button"
-                              (click)="decrement()"
+                              (click)="decrement(i)"
+                              disabled
                             >
                             -
                             </button>
-                            <p class="poppins fw-semibold ms-4 t2">{{count}}</p>
+                            <p class="poppins fw-semibold ms-4 t2" *ngFor="let item of count">{{item.quantity}}</p>
+            
                             <button
                               class="btn-secondary rounded-3 p1 ms-3"
                               type="button"
-                              (click)="increment()"
+                              (click)="increment(i)"
+                              disabled
                             >
                                 +
                             </button>
@@ -253,7 +260,7 @@
         
                   <div class="d-flex align-items-center justify-content-end mt-5">
                       <h5 class="ms-6 poppins text-muted">Sub Total</h5>
-                      <h6 class="poppins fw-bold">₦{{grandTotal}}</h6>
+                      <h6 class="poppins fw-bold">₦{{ grandTotal1 }}</h6>
         
                   </div>
         

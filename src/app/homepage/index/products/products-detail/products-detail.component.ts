@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { ProductsService } from 'src/app/shared/api/products/products.service';
 import { SessionService } from 'src/app/shared/storage/session.service';
 import { HostListener } from '@angular/core';
@@ -12,6 +12,9 @@ import { CartserviceService } from 'src/app/shared/api/carts/cartservice.service
 })
 export class ProductsDetailComponent implements OnInit {
 
+
+  id: string | any;
+  products: any[] =[];
 
   product: any[]= [
     {
@@ -88,19 +91,20 @@ export class ProductsDetailComponent implements OnInit {
   public allProducts:Array<any>=[];
 
 
-
+  $item: any;
   
-  count: number = 0;
+  count: number = 1;
 
-  constructor(
+  constructor(private route: ActivatedRoute,
     private router: Router,private list:ProductsService, private session: SessionService,
     private cartservice: CartserviceService
   ) {}
 
   ngOnInit(): void {
     this.listProduct();
-    console.log(this.listProduct)
-
+    // console.log(this.listProduct)
+    this.listingproducts()
+    
 
     
     this.cartservice.search.subscribe((val:any)=>{
@@ -118,6 +122,18 @@ export class ProductsDetailComponent implements OnInit {
     console.log()
   }
 
+
+
+
+
+  listingproducts(){
+    this.id = this.route.snapshot.paramMap.get('id')
+          this.list.listsingle(this.id).subscribe( (data: any)=>{
+    
+            console.log(data)
+            
+          })
+        }
 
 // async listProduct(){
 //   try {

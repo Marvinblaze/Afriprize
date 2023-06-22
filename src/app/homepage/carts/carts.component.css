@@ -17,6 +17,15 @@
     }
 
 
+    .delete-button {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
 
 
     /* //empty cart */

@@ -79,6 +79,19 @@
 }
 
 
+
+.custom-button {
+  background-color: #010038 !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  padding: 10px 20px !important; 
+  border-radius: 5px !important; 
+}
+
+.custom-button:hover {
+  background-color: #cc0000 !important;
+}
+
 @media (min-width: 768px) and (max-width: 1023.99px) {
 
     .img-size{

@@ -24,7 +24,7 @@
             <ng-template #defaultImageSection>
               <img src="../../../assets/images/Ellipse 15.svg" alt="" class="size">
             </ng-template>
-            <h4 class="mt-5f20" >{{profileobject}} {{userobject}}</h4>
+            <h4 class="mt-5 f20" >{{profileobject}} {{userobject}}</h4>
             <h6 class="f16">{{country}}</h6>
           </div>
 
@@ -73,6 +73,8 @@
 
               <li class="nav-item ms-4">
                 <a class="d-flex nav-link tex-dark f-10"  routerLinkActive="active_link"
+                
+                (click)="signout()"
                   [routerLinkActiveOptions]="{ exact: true }"><i class="fa-solid fa-right-from-bracket mt-2 mx-2"></i>
                   <h4 class="ms-2 disa">Signout</h4>
                 </a>
@@ -107,25 +109,95 @@
               <div class="row">
                 <div class="mt-4 col-6 center-text">
 
-                  <button type="submit" class="poppins fw-semibold  btn btn-primary px-6" (click)="withdraw()" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <button type="submit" (click)="withdraw()" class="poppins fw-semibold  btn btn-secondary px-6" data-bs-toggle="modal" data-bs-target="#withdrawModal" >
                     Withdraw
                   </button>
 
 
-
-                  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Launch demo modal
-                  </button> -->
-                  
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
+                  <div class="modal fade" id="withdrawModal" tabindex="-1" aria-labelledby="withdrawModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content withdrawal-modal">
                         <div class="modal-header">
-                          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Verify withdraw details</h1>
+                          <h1 class="modal-title fs-6" id="withdrawModalLabel">Withdraw funds</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                          <form [formGroup]="withdrawForm" >
+                            <div class="mb-3">
+                              <label for="withdrawalAmount" class="form-label">Withdrawal Amount</label>
+                              <input type="number" class="form-control" id="withdrawalAmount" formControlName="withdrawalAmount" placeholder="Enter amount">
+                            </div>
+                            <div class="mb-3">
+                              <label for="bankSelect" class="form-label">Select Bank</label>
+                              <select class="form-select" id="bankSelect" formControlName="bankSelect" [(ngModel)]="selectedBank">
+                                <option selected disabled>Select bank</option>
+                                <option *ngFor="let bank of banks" [value]="bank.code">{{ bank.name }}</option>
+                              
+                              </select>
+                            </div>
+                            <div class="mb-3">
+                              <label for="accountNumber" class="form-label">Account Number</label>
+                              <input type="text" class="form-control" id="accountNumber" formControlName="accountNumber" placeholder="Enter account number">
+                            </div>
+
+                            <div *ngIf="verificationErrorMessage" class="alert alert-danger mt-3" role="alert">
+                              {{ verificationErrorMessage }}
+                            </div>
+                            <div class="text-center">
+                              <button type="button" class="btn btn-primary" (click)="onsubmit()" >Withdraw</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  
+                </div>
+                  <div class="mt-4 col-3 ms-3">
+  
+                    <button type="submit" class="poppins fw-semibold  btn btn-secondary px-6"  data-bs-toggle="modal" data-bs-target="#depositModal">
+                      Deposit
+                    </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="depositModal" tabindex="-1" aria-labelledby="depositModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content deposit-modal">
+                        <div class="modal-header">
+                          <div class="row w-100">
+                            <div class="col-6">
+                              <h1 class="modal-title fs-6 " id="depositModalLabel">Deposit funds</h1>
+                            </div>
+                            <div class="col-6">
+                              <h1 class="modal-title fs-6 " id="depositModalLabel">Cash:NGN {{ balance | number: '1.2-2' }} </h1>
+                            </div>
+                          </div>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                          <form  #depositForm>
+                            <div class="mb-3">
+                              <label for="amountInput" class="form-label text-white">Amount</label>
+                              <input type="number" class="form-control" id="amountInput" placeholder="Enter amount">
+                            </div>
+                            <div class="mb-3">
+                              <label for="paymentMethodSelect" class="form-label">Payment Method</label>
+                              <select class="form-select" id="paymentMethodSelect">
+                                <option selected disabled>Select payment method</option>
+                                <option value="bank">Bank Transfer</option>
+                                <option value="card">Credit Card</option>
+                                <option value="wallet">E-Wallet</option>
+                              </select>
+                            </div>
+                            <div class="text-center">
+                              <button type="submit" class="btn btn-primary" (click)="balancefund()">Deposit</button>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- <div class="modal-body">
                           <label for="" class="mx-4">Bank code</label>
                           <input [(ngModel)]="bankCode" placeholder="Bank Code">
 
@@ -134,21 +206,12 @@
                           <div *ngIf="verificationStatus === true" class="verification-error-message">
                             {{ verificationErrorMessage }}
                           </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary" (click)="verifyAccount()">Verify Account</button>
-                        </div>
+                        </div> -->
+      
                       </div>
                     </div>
                   </div>
 
-                </div>
-                <div class="mt-4 col-3 ms-3">
-
-                  <button type="submit" class="poppins fw-semibold  btn btn-secondary px-6" (click)="balancefund(2000)">
-                    Deposit
-                  </button>
                 </div>
 
               </div>
@@ -180,6 +243,17 @@
                           <h5 class="poppins fw-bold f23">N35,000.00</h5>
                         </div>
                         <p class="mx-2 poppins text-muted f-8 margin">Thursday 16th March 2023</p>
+
+                        <!-- <ng-container *ngFor="let transaction of transactions">
+                          <ng-container *ngIf="transaction.payment_provider === 'paystack'">
+                            <tr>
+                              <td>{{ transaction.date }}</td>
+                              <td>{{ transaction.description }}</td>
+                              <td>{{ transaction.amount }}</td>
+                              <td>{{ transaction.type === 'deposit' ? 'Deposit' : 'Withdrawal' }}</td>
+                            </tr>
+                          </ng-container>
+                        </ng-container> -->
                       </div>
                     </div>
                   </div>

@@ -1,10 +1,10 @@
 <section style="margin-bottom: 20rem;">
     <div class="container-fluid">
       <div class="d-flex flex-wrap">
-        <div class="car-margin">
+        <div class="car-margin" >
           <img src="../../../assets/images/better rectangle.svg" alt="car" class="car"/>
           <div class="d-flex align-items-center">
-            <div class="bottom">
+            <div class="bottom" >
             <div class="msize">
               <img src="../../../assets/images/Rectangle 952.svg" alt="" class="msize" />
             </div>
@@ -33,14 +33,15 @@
 
           <div
             class="col-12 d-block d-sm-flex align-items-center justify-content-between d-lg-block scroll mt-4 margin"
+            
           >
           
 
-              <div class="border px-4 pad mb-3 mx-md-2">
+              <div class="border px-4 pad mb-3 mx-md-2" *ngFor="let ads of ticketobject">
                 <div class="d-flex align-items-center justify-content-between">
                   <div class="d-flex flex-column ">
                     <h3 class="poppins-bold text-dark fw-bold">
-                      Win Ferrari
+                      {{ads.sellingfast.rafflead.ticket_name}}
                     </h3>
                     <p class="text-dark f-16">
                       Stand a chance to win <br />2023 ferrari
@@ -123,11 +124,11 @@
 
       <div class="col-12 mt-2">
         <h3 class="text-start poppins fw-semibold">Recommended</h3>
-        <div class="row mt-2">
+        <div class="row mt-3">
           <div
-            class="col-12 col-md-6 col-lg-3 mb-4 ms-auto  "
+            class="col-12 col-md-6 col-lg-3 mb-4 "
             *ngFor="let item of allProducts"
-            [routerLink]="['/homepage/index/products/products-detail']"
+            [routerLink]="['/homepage/index/products/:id']"
             (click)="scrollToTop()"
           >
             <div class="border border-top-0 shadow rounded-4 dash">
@@ -205,50 +206,59 @@
                 <div class="">
 
                   <div class="container">
-                    <div class="wrapper">
-                        <button class="toggle" (click)="toggleAccordion(1)">
+                    <div class="wrapper" [ngClass]="{'open': isAccordionOpen(0)}">
+                        <button class="toggle" (click)="toggleAccordion(0)">
                           What is AfrPrize and how does it work?
-                            <i class="fas fa-plus icon" [ngClass]="{'fa-minus': isAccordionOpen(1)}"></i>
-                        </button>
-                        <div class="content" [ngClass]="{'open': isAccordionOpen(1)}">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <button class="toggle">
-                            How do I apply the coupon?
-                            <i class="fas fa-plus icon"></i>
+                            <i class="fas fa-plus icon" [ngClass]="{'fa-minus': isAccordionOpen(0)}"></i>
                         </button>
                         <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error doloremque, quibusdam qui necessitatibus autem aperiam reprehenderit? Ipsum maiores dolore inventore ea. Accusantium fuga eius laboriosam iusto blanditiis doloremque ullam?</p>
+                            <p>AfrPrize is an ecommerce platform that offers a unique lottery experience to its 
+                              customers. Every time you purchase an item, you are automatically entered into 
+                              a lottery slot for a chance to win exciting prizes</p>
                         </div>
                     </div>
-                    <div class="wrapper">
-                        <button class="toggle">
-                            How do I become a member?
-                            <i class="fas fa-plus icon"></i>
-                        </button>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
-                        </div>
+                    <div class="wrapper"[ngClass]="{'open': isAccordionOpen(1)}">
+                      <button class="toggle" (click)="toggleAccordion(1)">
+                        How are the lottery winners chosen?
+                          <i class="fas fa-plus icon" [ngClass]="{'fa-minus': isAccordionOpen(1)}"></i>
+                      </button>
+                      <div class="content" >
+                          <p>The lottery winners are chosen randomly using an automated system. Each entry 
+has an equal chance of being selected as a winner</p>
+                      </div>
                     </div>
-                    <div class="wrapper">
-                        <button class="toggle">
-                            How do I become a member?
-                            <i class="fas fa-plus icon"></i>
-                        </button>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
-                        </div>
+                    <div class="wrapper"[ngClass]="{'open': isAccordionOpen(2)}">
+                      <button class="toggle" (click)="toggleAccordion(2)">
+                        What is AfrPrize and how does it work?
+                          <i class="fas fa-plus icon" [ngClass]="{'fa-minus': isAccordionOpen(2)}"></i>
+                      </button>
+                      <div class="content" >
+                          <p>AfrPrize is an ecommerce platform that offers a unique lottery experience to its 
+                            customers. Every time you purchase an item, you are automatically entered into 
+                            a lottery slot for a chance to win exciting prizes</p>
+                      </div>
                     </div>
-                    <div class="wrapper">
-                        <button class="toggle">
-                            How do I become a member?
-                            <i class="fas fa-plus icon"></i>
-                        </button>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
-                        </div>
+                    <div class="wrapper"[ngClass]="{'open': isAccordionOpen(3)}">
+                      <button class="toggle" (click)="toggleAccordion(3)">
+                        How do I participate in the AfrPrize lottery?
+                          <i class="fas fa-plus icon" [ngClass]="{'fa-minus': isAccordionOpen(3)}"></i>
+                      </button>
+                      <div class="content" >
+                          <p>Participating in the AfrPrize lottery is easy! Simply make a purchase on our 
+                            website, and you will be automatically entered into the lottery for that specific 
+                            item</p>
+                      </div>
+                    </div>
+                    <div class="wrapper"[ngClass]="{'open': isAccordionOpen(4)}">
+                      <button class="toggle" (click)="toggleAccordion(4)">
+                        Are there any additional costs or fees for entering the lottery?
+                          <i class="fas fa-plus icon" [ngClass]="{'fa-minus': isAccordionOpen(4)}"></i>
+                      </button>
+                      <div class="content" >
+                          <p>No, there are no additional costs or fees for entering the AfrPrize lottery. Your 
+                            entry is included with your purchase, so you have a chance to win without any 
+                            extra expenses</p>
+                      </div>
                     </div>
                 </div>
                   

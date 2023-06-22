@@ -6,10 +6,12 @@
           <div
             class="d-flex align-items-center justify-content-center flex-column"
           >
+
+          
             <img
-              src="../../../assets/images/Ellipse 15.svg"
-              alt=""
-              class="size"
+              [src]="selectedImage" alt="Profile Picture"
+              
+              class="size rounded-pill"
             />
             <h4 class="mt-4 f20">{{profileobject}} {{userobject}}</h4>
             <h6 class="f16">{{country}}</h6>
@@ -41,7 +43,7 @@
               </a>
             </li>
 
-            <!-- <li class="nav-item  ms-4">
+            <li class="nav-item  ms-4">
               <a
                 class="nav-link poppins text-dark f-10 d-flex"
                 [routerLink]="['Help']"
@@ -51,7 +53,7 @@
                 <i class="fa-sharp fa-solid fa-headset mt-2 mx-2"></i>
                 <h4 class="ms-2 disa">Support</h4>
               </a>
-            </li> -->
+            </li>
 
             <li class="nav-item ms-4 poppins">
               <a
@@ -68,7 +70,8 @@
               <li class="nav-item  ms-4">
                 <a
                   class="d-flex nav-link tex-dark f-10"
-                  [routerLink]="['carts']"
+                 
+                  (click)="signout()"
                   routerLinkActive="active_link"
                   [routerLinkActiveOptions]="{ exact: true }"
                   ><i class="fa-solid fa-right-from-bracket mt-2 mx-2"></i>
@@ -102,6 +105,7 @@
                   src="../../../assets/images/Rectangle 41.svg"
                   alt=""
                   class="img-size mx-2"
+                  (click)="toggleOrderDetails()"
                 />
                 <div class="d-flex flex-column m6">
                   <h5 class="poppins fw-normal textsize">
@@ -120,6 +124,7 @@
           
           <div
             class="d-flex mt-5"
+            *ngIf="isOrderDetailsVisible"
           >
 
           <div class="row">

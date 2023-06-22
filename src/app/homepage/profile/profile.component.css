@@ -39,6 +39,12 @@ input[type=file]::-webkit-file-upload-button{
   }
 
 
+  .between{
+    display:flex;
+    justify-content: space-between;
+  }
+
+
   .size{
     width: 200px;
 }
@@ -103,6 +109,10 @@ input[type=file]::-webkit-file-upload-button{
       background: #747474 !important;
       
     }
+
+    .btn-secondary:hover{
+      background: #010038 !important;
+    }
     
     .center-text{
       margin-left: 5rem;
@@ -148,6 +158,83 @@ input[type=file]::-webkit-file-upload-button{
     }
 
 
+
+
+
+
+    /* Deposit modal */
+
+    .deposit-modal {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    
+    .modal-header {
+      background-color: #f8f8f8;
+      border-bottom: none;
+      padding: 10px;
+    }
+    
+    .modal-body {
+      padding: 20px;
+    }
+    
+    .form-label {
+      color: #333;
+    }
+    
+    .btn-primary {
+      background-color: #4caf50;
+      border-color: #4caf50;
+    }
+    
+    .btn-primary:hover {
+      background-color: #45a049;
+      border-color: #45a049;
+    }
+    
+    .btn-close {
+      color: #999;
+    }
+
+
+
+    /* Withdrawal modal */
+    .withdrawal-modal {
+      background-color: #f8f8f8;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .withdrawal-modal .modal-header {
+      background-color: #010038 ;
+      color: #fff;
+      border-bottom: none;
+      padding: 10px;
+    }
+    
+    .withdrawal-modal .modal-body {
+      padding: 20px;
+    }
+    
+    .withdrawal-modal .form-label {
+      color: #333;
+    }
+    
+    .withdrawal-modal .btn-primary {
+      background-color: #4caf50;
+      border-color: #4caf50;
+    }
+    
+    .withdrawal-modal .btn-primary:hover {
+      background-color: #45a049;
+      border-color: #45a049;
+    }
+    
+    .withdrawal-modal .btn-close {
+      color: #fff;
+    }
 /* @media (min-width: 320px) and (max-width: 768px) {
 
     .size{

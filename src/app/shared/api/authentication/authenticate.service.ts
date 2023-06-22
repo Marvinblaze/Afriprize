@@ -31,4 +31,10 @@ export class AuthenticateService {
   verify(body:any): Observable<any> {
     return this.http.post<any>(`${environment.url}${endpoints.verify}`, body);
   }
+
+
+
+  resetpassword(email:string): Observable<any> {
+    return this.http.get<any>(`${environment.url}${endpoints.forgetpassword}/${email}`)
+  }
 }
