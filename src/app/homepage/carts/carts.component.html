@@ -19,7 +19,7 @@
                   class="border rounded-1 mb-5 w-100 p-2"
                   *ngFor="let item of allProducts; let i = index"
                 >
-                <button class="delete-button" (click)="removeItem(i)">
+                <button class="delete-button" (click)="removeItem(i,item.id)">
                 <i class="fas fa-trash"></i>
                 Delete
               </button>
@@ -58,15 +58,15 @@
                                   <button
                                 class="btn-secondary rounded-3 p1"
                                 type="button"
-                                (click)="decrement(i)"
+                                (click)="decrement(i, item.id)"
                               >
                               -
                               </button>
-                              <p class="poppins fw-semibold ms-4 t2">{{count}}</p>
+                              <p class="poppins fw-semibold ms-4 t2">{{Items[item.id]}}</p>
                               <button
                                 class="btn-secondary rounded-3 p1 ms-3"
                                 type="button"
-                                (click)="increment(i)"
+                                (click)="increment(i,item.id)"
                                 >
                                   +
                               </button>

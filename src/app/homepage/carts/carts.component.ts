@@ -5,11 +5,20 @@ import { ProductsService } from 'src/app/shared/api/products/products.service';
 import { SessionService } from 'src/app/shared/storage/session.service';
 import { CartdaraService } from 'src/app/shared/cartdara.service';
 
+
+
+
+
 @Component({
   selector: 'app-carts',
   templateUrl: './carts.component.html',
   styleUrls: ['./carts.component.css']
 })
+
+
+
+
+
 export class CartsComponent implements OnInit{
 
 
@@ -27,6 +36,12 @@ export class CartsComponent implements OnInit{
  public cartItems: { price: number, quantity: number }[] = [];
 
 
+ Items: {[id: string]:number} = {}
+
+
+
+
+
 
   constructor(
     private router: Router,
@@ -39,8 +54,7 @@ export class CartsComponent implements OnInit{
     ngOnInit(): void {
 
 
-
-
+      
       
       this.cartService.getProducts()
       .subscribe(res=>{
@@ -54,7 +68,8 @@ export class CartsComponent implements OnInit{
       })
       
       this.deliveryFee = 10;
-
+      
+      this.InitializeItems()
       
 
 
@@ -62,13 +77,7 @@ export class CartsComponent implements OnInit{
   }
 
 
-  // calculateTotalPrice() {
-  //   let totalPrice = 0;
-  //   this.cartItems.forEach((item) => {
-  //     totalPrice += item.price * item.quantity;
-  //   });
-  //   this.totalPrice = totalPrice;
-  // }
+
 
   updateCart() {
 
@@ -91,12 +100,20 @@ export class CartsComponent implements OnInit{
 
 
   
-  removeItem(item: any){
+  removeItem(item: any, id: string){
+    this.cartItems[item].quantity = 0;
+   
+    // this.Items = this.Items.filter(obj => return obj !== foo_object);
     this.cartService.removeCartItem(item);
-    console.log(this.cartService.removeCartItem(item))
+    // console.log(this.cartService.removeCartItem(item))
+    delete this.Items[id];
+    this.updateTotalPrice();
+    
   }
+
   emptycart(){
     this.cartService.removeAllCart();
+    this.Items = {}
   }
 
 
@@ -129,24 +146,20 @@ export class CartsComponent implements OnInit{
   }
 
 
-//  navigateToAnotherPage() {
-//   this.router.navigate(['homepage/carts/checkout'], {
-//     relativeTo: this.route,
-//     queryParams: { grandTotal: this.grandTotal }
-//   });
-// }
 
 
-  increment(index: number) {
-    this.count++;
+
+  increment(index: number, id: string) {
+    // this.count++;
+    this.Items[id]++
     this.cartItems[index].quantity++;
     this.updateTotalPrice();
   }
 
-  decrement(index: number) {
+  decrement(index: number, id: string) {
 
-    if (this.count > 0) {
-      this.count--;
+    if (this.Items[id] > 0) {
+      this.Items[id]--;
     }
     if (this.cartItems[index].quantity > 1) {
       this.cartItems[index].quantity--;
@@ -166,10 +179,14 @@ export class CartsComponent implements OnInit{
   // }
 
 
-  // calculateSubtotal() {
-  //   this.subtotal = this.carts.reduce((total, cart) => {
-  //     return total + (cart.quantity * cart.price);
-  //   }, 0);
-  // }
+  InitializeItems(){
+    
+    for (let product of this.allProducts){
+      this.Items[product.id] = 1;
+    } 
+  }
+
+
+
 
 }

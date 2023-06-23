@@ -18,7 +18,7 @@ export const endpoints = {
 
     recommend: 'products/recommended',
     list: 'products/list',
-    listsingle: 'products/list/b6836828-0366-4961-af8f-8008664d73f8',
+    listsingle: 'products/list/',
 
 
     //orders

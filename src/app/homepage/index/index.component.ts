@@ -164,7 +164,7 @@ export class IndexComponent implements OnInit {
     this.list.Selling().subscribe((data: any) =>{
       console.log("selling fast",data); 
 
-      this.ticketobject = data.sellingfast.raffleAd;
+      this.ticketobject = data.sellingfast[0].raffleAd;
       console.log(this.ticketobject)
     })
   }

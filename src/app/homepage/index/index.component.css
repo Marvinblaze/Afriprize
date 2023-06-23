@@ -8,8 +8,38 @@
     margin-top: 2rem;
 }
 .car-margin{
-    margin-top: 5rem;
+    height: 600px;
+    margin-top: 5rem;   
+    position: relative;
+    overflow: hidden;
 }
+
+.sellingfast {
+    position: relative;
+    z-index: 1;
+  }
+
+
+
+  .carousel-indicators {
+    position: absolute;
+    top: 10px;
+    left: 20rem;
+    z-index: 1;
+  }
+  
+  .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0 4px;
+  }
+  
+  .carousel-indicators li.active {
+    background-color: #000;
+  }
 
 h5{
     font-size: 30px !important;
@@ -83,6 +113,22 @@ h5{
 .border-top-0{
     border-top: none !important;
 }
+
+
+.dash:hover {
+    border-color: #000;
+    transform: scale(1.07);
+    transition: border-color 0.3s ease;
+  }
+  
+  .dash:hover .recommend-img {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .dash:hover .recommend-img:hover {
+    filter: none;
+  }
 
 
 .recommend-img{
