@@ -62,7 +62,7 @@ export class DrawsComponent implements OnInit {
         const endDateString = endDate.toLocaleDateString('en-US');
 
         // console.log(startDateString);
-        console.log(endDateString);
+        // console.log(endDateString);
       }
     )
   }
@@ -71,7 +71,9 @@ export class DrawsComponent implements OnInit {
       (data)=>{
         console.log(data);
 
-        this.ticketobject = data.raffleads;
+        this.ticketobject = data.products;
+
+        console.log(this.ticketobject)
 
        
       }
@@ -81,7 +83,7 @@ export class DrawsComponent implements OnInit {
 
   getTargetedImageUrl(): string {
     if (this.ticketobject.length > 0) {
-      const firstProductPictures = this.ticketobject[0].pictures;
+      const firstProductPictures = this.ticketobject[0].raffleAd.pictures;
       if (firstProductPictures.length > 0) {
         const firstPicture = firstProductPictures[0];
         return firstPicture.location;
@@ -89,6 +91,28 @@ export class DrawsComponent implements OnInit {
     }
     return '';
   }
+  getTargetedImageUrl1(): string {
+    if (this.ticketobject.length > 1) {
+      const firstProductPictures = this.ticketobject[0].raffleAd.pictures;
+      if (firstProductPictures.length > 1) {
+        const firstPicture = firstProductPictures[1];
+        return firstPicture.location;
+      }
+    }
+    return '';
+  }
+
+
+  // getTargetedImageUrl1(): string {
+  //   if (this.allProducts.length > 0) {
+  //     const firstProductPictures = this.ticketobject[1].raffleAd.pictures;
+  //     if (firstProductPictures.length > 1) {
+  //       const secondPicture = firstProductPictures[1];
+  //       return secondPicture.location;
+  //     }
+  //   }
+  //   return '';
+  // }
 
 
 }

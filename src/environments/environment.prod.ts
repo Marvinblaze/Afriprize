@@ -1,4 +1,4 @@
 export const environment = {
   production: true, 
-  url:'http://3.10.125.159/api/v1/', 
+  url:'http://afriprize.eu-north-1.elasticbeanstalk.com/api/v1/', 
 };

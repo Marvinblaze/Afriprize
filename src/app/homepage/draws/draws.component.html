@@ -6,7 +6,7 @@
                 <img src="../../../assets/images/1 7.svg" alt="" class="img-fluid">
             </div>
 
-            <div class="col-12 mb-5">
+            <div class="col-12 mb-5" *ngFor="let item of ticketobject">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                   
                     <ol class="carousel-indicators">
@@ -17,10 +17,11 @@
                     </ol>
                   
                     
-                    <div class="carousel-inner">
+                          
+                            <div class="carousel-inner" >
                       <div class="carousel-item active">
 
-                        <img class="d-block Images" src="../../../assets/images/Rectangle 25.svg" alt="Image 1">
+                        <img class="d-block Images" src="{{ getTargetedImageUrl() }}" alt="Image 1">
                         <div class="card-img-overlay">
                         
                             <div class="d-flex flex-column align-content-center justify-content-center content">
@@ -34,10 +35,10 @@
                                       <img src="../../../assets/images/Rectangle 952.svg" alt="" class="img1" />
                                   
                                       <p class="card-text text-white f-10">
-                                        Buy snickers and stand a chance to win
+                                        {{item.raffleAd.ad_description}}
                                       </p>
                                       
-                                      <h6 class="card-text text-white f-10">2023 McLaren</h6>
+                                      <h6 class="card-text text-white f-10">{{item.raffleAd.ad_name}}</h6>
                                     </div>
                                   </div>
 
@@ -73,10 +74,10 @@
                                       <img src="../../../assets/images/Rectangle 952.svg" alt="" class="img1" />
                                   
                                       <p class="card-text text-white f-10">
-                                        Buy snickers and stand a chance to win
+                                        {{item.raffleAd.ad_description}}
                                       </p>
                                       
-                                      <h6 class="card-text text-white f-10">2023 McLaren</h6>
+                                      <h6 class="card-text text-white f-10">{{item.raffleAd.ad_name}}</h6>
                                     </div>
                                   </div>
 

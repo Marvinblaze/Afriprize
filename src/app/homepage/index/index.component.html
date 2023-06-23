@@ -6,11 +6,11 @@
         </div>
         <div class="car-margin carousel">
           <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <!-- Add carousel indicators here -->
+
             <ol class="carousel-indicators">
               <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
               <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
-              <!-- Add more carousel indicators if needed -->
+           
             </ol>
             
             <div class="carousel-inner" style="height: 100%;">
@@ -64,10 +64,10 @@
         
               </div>
               
-              <!-- Add more carousel items if needed -->
+     
             </div>
             
-            <!-- Add carousel control buttons here -->
+         
             <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
@@ -78,7 +78,7 @@
             </a>
           </div>
         </div>
-        <!-- <div class="car-margin" >
+        <!-- <div class="car-margin">
           <img src="../../../assets/images/better rectangle.svg" alt="car" class="car"/>
           <div class="d-flex align-items-center">
             <div class="bottom" >
@@ -100,7 +100,7 @@
             </div>
        
           </div>
-        </div> -->
+        </div>  -->
 
         <div class="sellingfast mt-5">
           <h4 class="poppins text-muted t-center fw-normal fs-5 t5">Selling Fast</h4>
@@ -203,7 +203,7 @@
             class="col-12 col-md-6 col-lg-3 mb-4 "
             *ngFor="let item of allProducts"
             [routerLink]="['/homepage/index/products/:id']"
-            (click)="scrollToTop()"
+         
           >
             <div class="border border-top-0 shadow rounded-4 dash">
               <img
@@ -225,7 +225,7 @@
                   <div class="row">
                     <div class="col-7 ">
                       <h3 class="fw-bold poppins fs-6">{{ item.product_name }}</h3>
-                      <p class="card-text text-dark mt-3">800 sold out of 2,000</p>
+                      <p class="card-text text-dark mt-3">{{item.stock}} remains</p>
                       <div
                         class="progress bg-dange mt-1"
                         role="progressbar"
@@ -241,7 +241,7 @@
                       </div>
                       <p class="mb-5 mt-2">
                         Buy Flipflop for:
-                        <span style="color: #cc9933">{{item.product_price}}</span>
+                        <span style="color: #cc9933">₦{{item.product_price}}</span>
                       </p>
                     </div>
                     <div class="col-5">
